@@ -155,7 +155,11 @@ meaning the metric is preserved up to a scale factor $\Lambda(x)$ under conforma
 \end{align}
 where $F(x)=\Lambda(x)-1-\mathcal{O}(\epsilon^2)$. The Eq.\eqref{Killing} is called the conformal Killing equation. Contraction with $\delta^{\mu\nu}$ yields $F(x)=\frac{2}{d}\partial_{\mu}\epsilon^{\mu}$. There are only 4 classes of solutions for $\epsilon_{\mu}(x)$ which are, $\epsilon^{\mu}(x)=a^{\mu}$ (infinitesimal translation), $\epsilon^{\mu}(x)=M^{\mu}_{~\nu}x^{\nu}$ (infinitesimal rotation), $\epsilon^{\mu}(x)=\lambda x^{\mu}$ (infinitesimal scaling), and $\epsilon^{\mu}(x)=2(b.x) x^{\mu}-x^2b^{\mu}$ (Infinitesimal special conformal transformation or SCT). The generators of conformal transformations are: $P^{{\mu}}=i\partial^{{\mu}}$ (translation), $M^{{\mu}{\nu}}=i\left(x^{{\mu}}\partial^{{\nu}}-x^{{\nu}}\partial^{{\mu}}\right)$ (rotation), $D=ix_{{\mu}}\partial^{{\mu}}$ (dilation or scaling), and $\mathfrak{K}^{{\mu}}=i\left(2x^{{\mu}}x_{{\nu}}\partial^{{\nu}}-x^2\partial^{{\mu}}\right)$ (SCT). In finite form, the SCT will be $x'^{\mu }={\frac {x^{\mu }-b^{\mu }x^{2}}{1-2b\cdot x+b^{2}x^{2}}}$, this can be understood as an inversion of $x^\mu$, followed by a translation $b^\mu$, and followed again by an inversion \cite{Blumenhagen}.
 
-In the next section, Sec.~\ref{sec:conformal0110}, we present the one-dimensional conformal algebra and its representation in terms of creation and annihilation operators of a harmonic oscillator. In Sec .~\ref{sec:conformal}, we extend the interpolation method from the Poincar\'e group to the conformal group. We demonstrate that the $SO(2, 1 + 1)$ algebra decomposes into a direct sum of two identical algebras in the light-front limit. The interpolating Witt-like algebra is introduced in Sec.~\ref{sec_Witt-like}. In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles. Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
+In the next section, Sec.~\ref{sec:conformal0110}, we present the one-dimensional conformal algebra and its representation in terms of creation and annihilation operators of a harmonic oscillator. In Sec .~\ref{sec:conformal}, we extend the interpolation method from the Poincar\'e group to the conformal group. We demonstrate that the $SO(2, 1 + 1)$ algebra decomposes into a direct sum of two identical algebras in the light-front limit. The interpolating Witt-like algebra is introduced in Sec.~\ref{sec_Witt-like}. 
+%In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles. Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
+In Appendix~\ref{}, 
+we present the 
+
 
 
 \section{conformal algebra in \texorpdfstring{$(0+1)$}
@@ -405,7 +409,7 @@ as given in Table~\ref{tabelinterpolationlfd}.
  \hline
  \rule{0pt}{16pt}$P_{{-}}$ & \cellcolor{red!20}0 & \cellcolor{red!20}0 & \cellcolor{red!20}0 & \cellcolor{cyan!20}$2\sqrt{2}iD_{-}$ & \cellcolor{cyan!20}0 & \cellcolor{cyan!20}$\sqrt{2}iP_{{-}}$\\
  \hline
- \rule{0pt}{16pt}$D_{-}$ & \cellcolor{red!20}0 & \cellcolor{red!20}0 & \cellcolor{red!20}0 & \cellcolor{cyan!20}$-\sqrt{2}iP_{{-}}$ & \cellcolor{cyan!20}$\sqrt{2}i\mathfrak{K}_{{-}}$ & \cellcolor{cyan!20}0\\
+ \rule{0pt}{16pt}$D_{-}$ & \cellcolor{red!20}0 & \cellcolor{red!20}0 & \cellcolor{red!20}0  & \cellcolor{cyan!20}$\sqrt{2}i\mathfrak{K}_{{-}}$& \cellcolor{cyan!20}$-\sqrt{2}iP_{{-}}$ & \cellcolor{cyan!20}0\\
  \hline
 \end{tabular}}
 \end{table}
@@ -458,7 +462,7 @@ To make the conformal algebra into a simpler form in (1+1)D, we define the follo
     \frac{\mathfrak{K}_3}{L\sqrt{2}}&\frac{-LP_3}{\sqrt{2}}&-K_{3} & 0
   \end{pmatrix}_{4\times4}
 \end{align}
-where $L$ is any constant with the dimension of length~\cite{Fubini1976} which we take $L=1$ in this work, $J_{ab}=-J_{ba}$ (i.e. antisymmetric matrix) and $a,b\in\{-2,-1,0,3\}$. All $J_{ab}$ elements are conformal generators in $(1+1)D$. We omit here any cumbersome $(1+1)$ superscript for notational simplicity, without which $J_{ab} = J^{(1+1)}_{ab}$, as the generators here are obviously in $(1+1)D$. The $J_{ab}$ obey the $SO(2,1+1)$ commutation relations:
+where $L$ is any constant with the dimension of length~\cite{Fubini1976} which we take $L=1$ in this work, $J_{ab}=-J_{ba}$ (i.e. antisymmetric matrix) and $a,b\in\{-2,-1,0,3\}$. All $J_{ab}$ elements are conformal generators in $(1+1)D$. We omit here any cumbersome $(1+1)$ superscript for notational simplicity, without which $J_{ab} = J^{(1+1)}_{ab}$, as the generators here are obviously in $(1+1)D$. The generators $J_{ab}$ obey the $SO(2,1+1)$ commutation relations:
   \begin{align}\label{JabalgebraIFD}
       \left[J_{{a}{b}},J_{{c}{d}}\right]=-i\left(g_{{b}{d}}J_{{a}{c}}-g_{{b}{c}}J_{{a}{d}}+g_{{a}{c}}J_{{b}{d}}-g_{{a}{d}}J_{{b}{c}}\right)
   \end{align}
@@ -551,31 +555,63 @@ A comprehensive table of the 15 commutation relations among the covariant compon
 \scalebox{0.445}{
 \begin{tabular}{ |c||c|c|c|c|c|c| } 
  \hline
- \rule{0pt}{16pt} & $\mathfrak{K}_{\hat{-}}$& $P_{\hat{+}}$& $D_{\hat{-}}$  & $\mathfrak{K}_{\hat{+}}$  &  $P_{\hat{-}}$ & $D_{\hat{+}}$ \\
+ \rule{0pt}{16pt} & $\mathfrak{K}_{\hat{+}}$& $P_{\hat{+}}$& $D_{\hat{+}}$  & $\mathfrak{K}_{\hat{-}}$  &  $P_{\hat{-}}$ & $D_{\hat{-}}$ \\
  \hline
   \hline
- \rule{0pt}{16pt}$\mathfrak{K}_{\hat{-}}$  &$0$ &$-2i[(\cos{\delta}+\mathbb{S}\sin{\delta})D_{\hat{-}}+(\sin{\delta}-\mathbb{S}\cos{\delta})D_{\hat{+}}]$& $-i[(\cos{\delta}+\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{-}}+(\sin{\delta}-\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{+}}]$&$0$ &$2i\mathbb{C}[\sin{\delta}D_{\hat{-}}-\cos{\delta}D_{\hat{+}}]$ & $i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{-}}-\cos{\delta}\mathfrak{K}_{\hat{+}}]$\\
+ \rule{0pt}{16pt}$\mathfrak{K}_{\hat{+}}$  &$0$ &$-2i[(\cos{\delta}+\mathbb{S}\sin{\delta})D_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})D_{\hat{-}}]$& $-i[(\cos{\delta}+\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{-}}]$&$0$ &$2i\mathbb{C}[\sin{\delta}D_{\hat{+}}-\cos{\delta}D_{\hat{-}}]$ & $i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{+}}-\cos{\delta}\mathfrak{K}_{\hat{-}}]$\\
  \hline 
- \rule{0pt}{16pt}  $P_{\hat{+}}$ & $2i[(\cos{\delta}+\mathbb{S}\sin{\delta})D_{\hat{-}}+(\sin{\delta}-\mathbb{S}\cos{\delta})D_{\hat{+}}]$& $0$& $i[(\cos{\delta}+\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $-2i\mathbb{C}[\sin{\delta}D_{\hat{-}}-\cos{\delta}D_{\hat{+}}]$& $0$ & $-i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$\\
+ \rule{0pt}{16pt}  $P_{\hat{+}}$ & $2i[(\cos{\delta}+\mathbb{S}\sin{\delta})D_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})D_{\hat{-}}]$& $0$& $i[(\cos{\delta}+\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $-2i\mathbb{C}[\sin{\delta}D_{\hat{+}}-\cos{\delta}D_{\hat{-}}]$& $0$ & $-i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$\\
  \hline 
-  \rule{0pt}{16pt}$D_{\hat{-}}$  &$i[(\cos{\delta}+\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{-}}+(\sin{\delta}-\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{+}}]$ &$-i[(\cos{\delta}+\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $0$&$-i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{-}}-\cos{\delta}\mathfrak{K}_{\hat{+}}]$ & $i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$& $0$\\
+  \rule{0pt}{16pt}$D_{\hat{+}}$  &$i[(\cos{\delta}+\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{-}}]$ &$-i[(\cos{\delta}+\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}-\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $0$&$-i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{+}}-\cos{\delta}\mathfrak{K}_{\hat{-}}]$ & $i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$& $0$\\
  \hline 
- \rule{0pt}{16pt}$\mathfrak{K}_{\hat{+}}$ & $0$& $2i\mathbb{C}[\sin{\delta}D_{\hat{-}}-\cos{\delta}D_{\hat{+}}]$&$i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{-}}-\cos{\delta}\mathfrak{K}_{\hat{+}}]$  & $0$&$-2i[(\cos{\delta}-\mathbb{S}\sin{\delta})D_{\hat{-}}+(\sin{\delta}+\mathbb{S}\cos{\delta})D_{\hat{+}}]$ & $-i[(\cos{\delta}-\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{-}}+(\sin{\delta}+\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{+}}]$\\
+ \rule{0pt}{16pt}$\mathfrak{K}_{\hat{-}}$ & $0$& $2i\mathbb{C}[\sin{\delta}D_{\hat{+}}-\cos{\delta}D_{\hat{-}}]$&$i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{+}}-\cos{\delta}\mathfrak{K}_{\hat{-}}]$  & $0$&$-2i[(\cos{\delta}-\mathbb{S}\sin{\delta})D_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})D_{\hat{-}}]$ & $-i[(\cos{\delta}-\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{-}}]$\\
  \hline 
- \rule{0pt}{16pt}$P_{\hat{-}}$  & $-2i\mathbb{C}[\sin{\delta}D_{\hat{-}}-\cos{\delta}D_{\hat{+}}]$&$0$&$-i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$ &$2i[(\cos{\delta}-\mathbb{S}\sin{\delta})D_{\hat{-}}+(\sin{\delta}+\mathbb{S}\cos{\delta})D_{\hat{+}}]$ & $0$& $i[(\cos{\delta}-\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})P_{\hat{-}}]$\\
+ \rule{0pt}{16pt}$P_{\hat{-}}$  & $-2i\mathbb{C}[\sin{\delta}D_{\hat{+}}-\cos{\delta}D_{\hat{-}}]$&$0$&$-i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$ &$2i[(\cos{\delta}-\mathbb{S}\sin{\delta})D_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})D_{\hat{-}}]$ & $0$& $i[(\cos{\delta}-\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})P_{\hat{-}}]$\\
  \hline
- \rule{0pt}{16pt}$D_{\hat{+}}$ & $-i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{-}}-\cos{\delta}\mathfrak{K}_{\hat{+}}]$& $i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$& $0$& $i[(\cos{\delta}-\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{-}}+(\sin{\delta}+\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{+}}]$& $-i[(\cos{\delta}-\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $0$\\
+ \rule{0pt}{16pt}$D_{\hat{-}}$ & $-i\mathbb{C}[\sin{\delta}\mathfrak{K}_{\hat{+}}-\cos{\delta}\mathfrak{K}_{\hat{-}}]$& $i\mathbb{C}[\sin{\delta}P_{\hat{+}}-\cos{\delta}P_{\hat{-}}]$& $0$& $i[(\cos{\delta}-\mathbb{S}\sin{\delta})\mathfrak{K}_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})\mathfrak{K}_{\hat{-}}]$& $-i[(\cos{\delta}-\mathbb{S}\sin{\delta})P_{\hat{+}}+(\sin{\delta}+\mathbb{S}\cos{\delta})P_{\hat{-}}]$& $0$\\
  \hline 
 \end{tabular}}
 \end{table}
 \end{center}
 \end{widetext}
 
+\begin{comment}
+    
+\begin{widetext}
+\begin{center}
+\begin{table}[h!]
+\centering
+\caption{\label{tabel1+1interpolationlfd}$1+1$ conformal algebra in the interpolation form}
+\scalebox{0.6}{
+\begin{tabular}{ |c||c|c|c|c|c|c| } 
+\hline
+ \rule{0pt}{16pt} & $\mathfrak{K}_{\hat{+}}$& $P_{\hat{+}}$& $D_{\hat{+}}$  & $\mathfrak{K}_{\hat{-}}$  &  $P_{\hat{-}}$ & $D_{\hat{-}}$ \\
+ \hline
+  \hline
+ \rule{0pt}{16pt}$\mathfrak{K}_{\hat{+}}$  &$0$ &$-2i[(c_{\delta}+\mathbb{S}s_{\delta})D_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})D_{\hat{-}}]$& $-i[(c_{\delta}+\mathbb{S}s_{\delta})\mathfrak{K}_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})\mathfrak{K}_{\hat{-}}]$&$0$ &$2i\mathbb{C}[s_{\delta}D_{\hat{+}}-c_{\delta}D_{\hat{-}}]$ & $i\mathbb{C}[s_{\delta}\mathfrak{K}_{\hat{+}}-c_{\delta}\mathfrak{K}_{\hat{-}}]$\\
+ \hline 
+ \rule{0pt}{16pt}  $P_{\hat{+}}$ & $2i[(c_{\delta}+\mathbb{S}s_{\delta})D_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})D_{\hat{-}}]$& $0$& $i[(c_{\delta}+\mathbb{S}s_{\delta})P_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})P_{\hat{-}}]$& $-2i\mathbb{C}[s_{\delta}D_{\hat{+}}-c_{\delta}D_{\hat{-}}]$& $0$ & $-i\mathbb{C}[s_{\delta}P_{\hat{+}}-c_{\delta}P_{\hat{-}}]$\\
+ \hline 
+  \rule{0pt}{16pt}$D_{\hat{+}}$  &$i[(c_{\delta}+\mathbb{S}s_{\delta})\mathfrak{K}_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})\mathfrak{K}_{\hat{-}}]$ &$-i[(c_{\delta}+\mathbb{S}s_{\delta})P_{\hat{+}}+(s_{\delta}-\mathbb{S}c_{\delta})P_{\hat{-}}]$& $0$&$-i\mathbb{C}[s_{\delta}\mathfrak{K}_{\hat{+}}-c_{\delta}\mathfrak{K}_{\hat{-}}]$ & $i\mathbb{C}[s_{\delta}P_{\hat{+}}-c_{\delta}P_{\hat{-}}]$& $0$\\
+ \hline 
+ \rule{0pt}{16pt}$\mathfrak{K}_{\hat{-}}$ & $0$& $2i\mathbb{C}[s_{\delta}D_{\hat{+}}-c_{\delta}D_{\hat{-}}]$&$i\mathbb{C}[s_{\delta}\mathfrak{K}_{\hat{+}}-c_{\delta}\mathfrak{K}_{\hat{-}}]$  & $0$&$-2i[(c_{\delta}-\mathbb{S}s_{\delta})D_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})D_{\hat{-}}]$ & $-i[(c_{\delta}-\mathbb{S}s_{\delta})\mathfrak{K}_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})\mathfrak{K}_{\hat{-}}]$\\
+ \hline 
+ \rule{0pt}{16pt}$P_{\hat{-}}$  & $-2i\mathbb{C}[s_{\delta}D_{\hat{+}}-c_{\delta}D_{\hat{-}}]$&$0$&$-i\mathbb{C}[s_{\delta}P_{\hat{+}}-c_{\delta}P_{\hat{-}}]$ &$2i[(c_{\delta}-\mathbb{S}s_{\delta})D_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})D_{\hat{-}}]$ & $0$& $i[(c_{\delta}-\mathbb{S}s_{\delta})P_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})P_{\hat{-}}]$\\
+ \hline
+ \rule{0pt}{16pt}$D_{\hat{-}}$ & $-i\mathbb{C}[s_{\delta}\mathfrak{K}_{\hat{+}}-c_{\delta}\mathfrak{K}_{\hat{-}}]$& $i\mathbb{C}[s_{\delta}P_{\hat{+}}-c_{\delta}P_{\hat{-}}]$& $0$& $i[(c_{\delta}-\mathbb{S}s_{\delta})\mathfrak{K}_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})\mathfrak{K}_{\hat{-}}]$& $-i[(c_{\delta}-\mathbb{S}s_{\delta})P_{\hat{+}}+(s_{\delta}+\mathbb{S}c_{\delta})P_{\hat{-}}]$& $0$\\
+ \hline  
+\end{tabular}}
+\end{table}
+\end{center}
+\end{widetext}
+
+\end{comment}
+
 In the limit $\delta\rightarrow0$; $\mathbb{C}\rightarrow0;~\mathbb{S}\rightarrow1$, we recover the commutation relations among all IFD conformal generators in two dimensions as given in the Table. \ref{tabelinterpolationifd}. In the limit $\delta\rightarrow\frac{\pi}{4}$; $\mathbb{C}\rightarrow1;~\mathbb{S}\rightarrow0$, we recover the commutation relations among all LFD conformal generators in two dimensions as given below:
 
 \section{Interpolating  Witt-like algebra}
 \label{sec_Witt-like}
-The condition Eq.\eqref{Killing} for invariance under infinitesimal conformal transformations in Euclidean two dimensions gives Cauchy–Riemann equations \cite{Francesco,Blumenhagen}. In general, conformal generators Euclidean two dimensions are infinity dimensional, which are given by $l_n=-z^{n+1}\partial_{z},~\Bar{l}_n=-\Bar{z}^{n+1}\partial_{\Bar{z}}$, where $z=x^t+ix^3,~ \Bar{z}=x^t-ix^3$, but the globally defined conformal transformations on the Riemann sphere are generated by $l_{-1}$, $l_{0}$, $l_{+1}$, $\Bar{l}_{-1}$, $\Bar{l}_{0}$, and $\Bar{l}_{+1}$. These generators obey the Witt algebra in Euclidean complex space. The corresponding generators in Minkowski space-time can be achieved by doing a Wick rotation from Euclidean to Minkowski space: $x^t\longrightarrow -ix^{0}$ and $x^3\longrightarrow x^{3}$. We extend our interpolation to a more general Witt-like algebra, the Interpolation generators read
+The condition Eq.\eqref{Killing} for invariance under infinitesimal conformal transformations in Euclidean two dimensions gives Cauchy–Riemann equations \cite{Francesco, Blumenhagen}. In general, conformal generators Euclidean two dimensions are infinity dimensional, which are given by $l_n=-z^{n+1}\partial_{z},~\Bar{l}_n=-\Bar{z}^{n+1}\partial_{\Bar{z}}$, where $z=x^t+ix^3,~ \Bar{z}=x^t-ix^3$, but the globally defined conformal transformations on the Riemann sphere are generated by $l_{-1}$, $l_{0}$, $l_{+1}$, $\Bar{l}_{-1}$, $\Bar{l}_{0}$, and $\Bar{l}_{+1}$. These generators obey the Witt algebra in Euclidean complex space. The corresponding generators in Minkowski space-time can be achieved by doing a Wick rotation from Euclidean to Minkowski space: $x^t\longrightarrow -ix^{0}$ and $x^3\longrightarrow x^{3}$. We extend our interpolation to a more general Witt-like algebra, the Interpolation generators read
 \begin{align}
     l^{\hat{+}}_n&=\frac{-i(-i\sqrt{2})^{n+1}}{\sqrt{2}}\left[(c+s)\left(x^{+}\right)^{n+1}\partial_{+}+(c-s)\left(x^{+}\right)^{n+1}\partial_{-}\right],\\
     l^{\hat{-}}_n&=\frac{-i(-i\sqrt{2})^{n+1}}{\sqrt{2}}\left[(s-c)\left(x^{-}\right)^{n+1}\partial_{+}+(c+s)\left(x^{-}\right)^{n+1}\partial_{-}\right].
@@ -601,10 +637,10 @@ The globally defined conformal transformations on the Riemann sphere are generat
 where
 \begin{align}
     l^{\hat{+}}_{-1}&=-\frac{(P_{0}\cos{\delta}+P_{3}\sin{\delta})}{\sqrt{2}} &&l^{\hat{-}}_{-1}=-\frac{(P_{0}\sin{\delta}-P_{3}\cos{\delta})}{\sqrt{2}}\\
-    l^{\hat{+}}_{0}&=i\frac{(D\cos{\delta}-K^{3}\sin{\delta})}{\sqrt{2}} &&l^{\hat{-}}_{0}=i\frac{(D\sin{\delta}+K^{3}\cos{\delta})}{\sqrt{2}}\\
+    l^{\hat{+}}_{0}&=i\frac{(D\cos{\delta}+K_{3}\sin{\delta})}{\sqrt{2}} &&l^{\hat{-}}_{0}=i\frac{(D\sin{\delta}-K_{3}\cos{\delta})}{\sqrt{2}}\\
     l^{\hat{+}}_{1}&=\frac{(\mathfrak{K}_{0}\cos{\delta}-\mathfrak{K}_{3}\sin{\delta})}{\sqrt{2}} &&l^{\hat{-}}_{1}=\frac{(\mathfrak{K}_{0}\sin{\delta}+\mathfrak{K}_{3}\cos{\delta})}{\sqrt{2}}.
 \end{align}
-In the light-front limit $s\rightarrow\frac{1}{2},~c\rightarrow\frac{1}{2}$, we have $ l^{\hat{\pm}}_{-1}\rightarrow l^{\pm}_{-1}=-\frac{P_{\pm}}{\sqrt{2}}$, $l^{\hat{\pm}}_{0}\rightarrow l^{\pm}_{0}=i\frac{D_{\mp}}{\sqrt{2}}$, and $l^{\hat{\pm}}_{1}\rightarrow l^{\pm}_{1}= \frac{\mathfrak{K}_{\mp}}{\sqrt{2}}$, then the commutation relations reproduce the known Witt-like algebra,
+In the light-front limit $s\rightarrow\frac{1}{2},~c\rightarrow\frac{1}{2}$, we have $ l^{\hat{\pm}}_{-1}\rightarrow l^{\pm}_{-1}=-\frac{P_{\pm}}{\sqrt{2}}$, $l^{\hat{\pm}}_{0}\rightarrow l^{\pm}_{0}=i\frac{D_{\pm}}{\sqrt{2}}$, and $l^{\hat{\pm}}_{1}\rightarrow l^{\pm}_{1}= \frac{\mathfrak{K}_{\pm}}{\sqrt{2}}$, then the commutation relations reproduce the known Witt-like algebra,
 \begin{align}
     [l^{+}_m,l^{+}_n]&=(m-n)l^{+}_{m+n},\\
     [l^{-}_m,l^{-}_n]&=(m-n)l^{-}_{m+n},\\
@@ -639,15 +675,15 @@ The new vacuum $\ket{\Omega_{D_{3}}}$ created by $a^{\dagger\prime}_{D^{(1+0)}_{
 \begin{align}
     \ket{\Omega_{D_{3}}}=e^{\frac{\alpha}{2}\left(a^{\dagger 2} - a^2+1\right)}\ket{0}
 \end{align}
-where, $a\ket{0}=0$. To simplify the exponent, we define $D_{-}=\frac12 a^{\dagger2}$, $D_{+}=\frac12 a^{2}$, and $d_{0}=\frac12\bigl(a^{\dagger}a+\tfrac12\bigr)$, which forms a closed group as $[D_{-},D_{+}]=-2d_{0}$ and $[d_{0},d_{\pm}]=\pm d_{\pm}$. Then
+where, $a\ket{0}=0$. To simplify the exponent, we define $d_{+}=\frac12 a^{\dagger2}$, $d_{-}=\frac12 a^{2}$, and $d_{0}=\frac12\bigl(a^{\dagger}a+\tfrac12\bigr)$, which forms a closed group as $[d_{+},d_{-}]=-2d_{0}$ and $[d_{0},d_{\pm}]=\pm d_{\pm}$. Then
 \begin{align}
     \ket{\Omega_{D_{3}}}=e^{\frac{\alpha}{2}}S(\alpha)\ket{0}
 \end{align}
-where, $S(\alpha)=e^{\alpha(D_{-}-D_{+})}$. The ansatz for $S(\alpha)$, reads
+where, $S(\alpha)=e^{\alpha(d_{+}-d_{-})}$. The ansatz for $S(\alpha)$, reads
 \begin{align}
-S(\alpha)=e^{f(\alpha)D_{-}}\;e^{g(\alpha)d_{0}}\;e^{h(\alpha)D_{+}}
+S(\alpha)=e^{f(\alpha)d_{+}}\;e^{g(\alpha)d_{0}}\;e^{h(\alpha)d_{-}}
 \end{align}
-with initial conditions $f(0)=g(0)=h(0)=0$. On differentiating the ansatz, and matching the coefficients of $D_{-}$, $D_{+}$, and $d_{0}$, we get the following ordinary differential equation system
+with initial conditions $f(0)=g(0)=h(0)=0$. On differentiating the ansatz, and matching the coefficients of $d_{+}$, $d_{-}$, and $d_{0}$, we get the following ordinary differential equation system
 \begin{align}
 f'-g'f+h'e^{-g}f^{2}&=1,\\
 g'-2h'e^{-g}f&=0,\\
@@ -655,9 +691,9 @@ h'e^{-g}&=-1.
 \end{align}
 We also used the Baker–Campbell–Hausdorff formula
 \begin{align}
-    e^{f D_{-}}d_{0}e^{-f D_{-}}&=d_{0}-f D_{-},\\
-e^{g d_{0}}D_{+}e^{-g d_{0}}&=e^{-g}D_{+},\\
-e^{f D_{-}}D_{+}e^{-f D_{-}}&=K_{-}-2fd_{0}+f^{2}D_{-}.
+    e^{f d_{+}}d_{0}e^{-f d_{+}}&=d_{0}-f d_{+},\\
+e^{g d_{0}}d_{-}e^{-g d_{0}}&=e^{-g}d_{-},\\
+e^{f d_{+}}d_{-}e^{-f d_{+}}&=K_{-}-2fd_{0}+f^{2}d_{+}.
 \end{align}
 The solution for the ordinary differential equation reads 
 \begin{align}
@@ -704,6 +740,7 @@ then
 \begin{align}
     \braket{\Omega_{P_{3}}|\Omega_{D_{3}}} =& \frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\; e^{-\frac{c^2}{4}(1-\tanh\alpha)}~.
 \end{align}
+
 
 
 \bibliography{BibTeXList}% Produces the bibliography via BibTeX.
