@@ -153,7 +153,16 @@ meaning the metric is preserved up to a scale factor $\Lambda(x)$ under conforma
 \begin{align}
     \partial_{\mu}\epsilon_{\nu}(x)+\partial_{\nu}\epsilon_{\mu}(x)=F(x)\delta_{\mu\nu},\label{Killing}
 \end{align}
-where $F(x)=\Lambda(x)-1-\mathcal{O}(\epsilon^2)$. The Eq.\eqref{Killing} is called the conformal Killing equation. Contraction with $\delta^{\mu\nu}$ yields $F(x)=\frac{2}{d}\partial_{\mu}\epsilon^{\mu}$. There are only 4 classes of solutions for $\epsilon_{\mu}(x)$ which are, $\epsilon^{\mu}(x)=a^{\mu}$ (infinitesimal translation), $\epsilon^{\mu}(x)=M^{\mu}_{~\nu}x^{\nu}$ (infinitesimal rotation), $\epsilon^{\mu}(x)=\lambda x^{\mu}$ (infinitesimal scaling), and $\epsilon^{\mu}(x)=2(b.x) x^{\mu}-x^2b^{\mu}$ (Infinitesimal special conformal transformation or SCT). The generators of conformal transformations are: $P^{{\mu}}=i\partial^{{\mu}}$ (translation), $M^{{\mu}{\nu}}=i\left(x^{{\mu}}\partial^{{\nu}}-x^{{\nu}}\partial^{{\mu}}\right)$ (rotation), $D=ix_{{\mu}}\partial^{{\mu}}$ (dilation or scaling), and $\mathfrak{K}^{{\mu}}=i\left(2x^{{\mu}}x_{{\nu}}\partial^{{\nu}}-x^2\partial^{{\mu}}\right)$ (SCT). In finite form, the SCT will be $x'^{\mu }={\frac {x^{\mu }-b^{\mu }x^{2}}{1-2b\cdot x+b^{2}x^{2}}}$, this can be understood as an inversion of $x^\mu$, followed by a translation $b^\mu$, and followed again by an inversion \cite{Blumenhagen}.
+where $F(x)=\Lambda(x)-1-\mathcal{O}(\epsilon^2)$. The Eq.\eqref{Killing} is called the conformal Killing equation. Contraction with $\delta^{\mu\nu}$ yields $F(x)=\frac{2}{d}\partial_{\mu}\epsilon^{\mu}$. There are only 4 classes of solutions for $\epsilon_{\mu}(x)$ which are, $\epsilon^{\mu}(x)=a^{\mu}$ (infinitesimal translation), $\epsilon^{\mu}(x)=M^{\mu}_{~\nu}x^{\nu}$ (infinitesimal rotation), $\epsilon^{\mu}(x)=\lambda x^{\mu}$ (infinitesimal scaling), and $\epsilon^{\mu}(x)=2(b.x) x^{\mu}-x^2b^{\mu}$ (Infinitesimal special conformal transformation or SCT). The generators of conformal transformations are: 
+\begin{align}
+    P_{{\mu}}=&i\partial_{{\mu}}&& \text{(translation)}\\
+    M_{{\mu}{\nu}}=&i\left(x_{{\mu}}\partial_{{\nu}}-x_{{\nu}}\partial_{{\mu}}\right)&& \text{(rotation)}\\
+    D=&ix_{{\mu}}\partial^{{\mu}}&& \text{(dilation)}\\
+    \mathfrak{K}_{{\mu}}=&i\left(2x_{{\mu}}x_{{\nu}}\partial^{{\nu}}-x^2\partial_{{\mu}}\right)&& \text{(SCT)}
+\end{align}
+%$P^{{\mu}}=i\partial^{{\mu}}$ (translation), $M^{{\mu}{\nu}}=i\left(x^{{\mu}}\partial^{{\nu}}-x^{{\nu}}\partial^{{\mu}}\right)$ (rotation), $D=ix_{{\mu}}\partial^{{\mu}}$ (dilation or scaling), and $\mathfrak{K}^{{\mu}}=i\left(2x^{{\mu}}x_{{\nu}}\partial^{{\nu}}-x^2\partial^{{\mu}}\right)$ (SCT). 
+
+In finite form, the SCT will be $x'^{\mu }={\frac {x^{\mu }-b^{\mu }x^{2}}{1-2b\cdot x+b^{2}x^{2}}}$, this can be understood as an inversion of $x^\mu$, followed by a translation $b^\mu$, and followed again by an inversion \cite{Blumenhagen}.
 
 In the next section, Sec.~\ref{sec:conformal0110}, we present the one-dimensional conformal algebra and its representation in terms of creation and annihilation operators of a harmonic oscillator. In Sec .~\ref{sec:conformal}, we extend the interpolation method from the Poincar\'e group to the conformal group. We demonstrate that the $SO(2, 1 + 1)$ algebra decomposes into a direct sum of two identical algebras in the light-front limit. The interpolating Witt-type algebra is introduced in Sec.~\ref{sec_Witt-type}. 
 %In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles. Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
@@ -162,48 +171,42 @@ In Appendix~\ref{Dilated-vacuum},
 we present the more detailed derivation discussed in Sec.~\ref{sec:conformal0110} regarding the coherent vacuum ($\ket{\Omega_{D_{3}}}$)
  associated with the dilation.
 
-
-
 \section{conformal algebra in \texorpdfstring{$(0+1)$}
 {Lg} and \texorpdfstring{$(1+0)$}{Lg} dimension}
 \label{sec:conformal0110}
-
- In 0-space \& 1-time $(0+1)$, and 1-space \& 0-time $(1+0)$ dimension, we have
+ In 0-space \& 1-time $(0+1)$ dimension, as the only variable is time $x^0$, we may consider three operations with time, namely evolution (i.e. translation of time $x^{0\prime}=x^0+a$), scaling (i.e. $x^{0\prime} = \lambda x^0$) and the translation of inversed-time (i.e. $\frac{1}{x^{0\prime}}=\frac{1}{x^0}+\frac{1}{b}$). The generators of these three operations correspond to the three conformal generators, namely
 \begin{align}
-    P^{(0+1)}_{0}=&i\partial_{0}\\
-    \mathfrak{K}^{(0+1)}_{{0}}=&ix_{0}x_{0}\partial_{{0}}\\
-    D^{(0+1)}_{0}=&ix_{0}\partial_{0}\\
-    P^{(1+0)}_{3}=&i\partial_{3}\\
-    \mathfrak{K}^{(1+0)}_{{3}}=&-ix_{3}x_{3}\partial_{{3}}\\
-    D^{(1+0)}_{3}=&-ix_{3}\partial_{3}\label{0110xpartial}
+    P^{(0+1)}_{0}=&i\partial_{0},\label{P01}\\
+    D^{(0+1)}_{0}=&ix_{0}\partial_{0},\label{D01}\\
+    \mathfrak{K}^{(0+1)}_{{0}}=&ix_{0}x_{0}\partial_{{0}}.\label{KK01}
 \end{align}
-respectively. {\color{red} The transformations generated by $(0+1)$ conformal generators can be embodied in the single projective transformation defined as
+The transformations generated by $(0+1)$-conformal generators can be embodied in the single projective transformation (Möbius transformation) defined as
 \begin{align}
     x_{0}\rightarrow x^{\prime}_{0}=\frac{\alpha x_{0} +\beta}{\gamma x_{0} +\delta}
 \end{align}
 where the real numbers: $\alpha, \beta, \gamma, \delta$ can be considered as the elements of a real unimodular matrix, namely $\begin{pmatrix}
-    \alpha & \gamma\\
-    \beta & \delta
-\end{pmatrix}$ with determinant equal to 1, i.e., $\alpha\delta-\beta\gamma=1$. Fubini explored the Pauli matrix representation for $(0+1)$ conformal algebra \cite{Fubini1976} which reads,
+    \alpha &  \beta \\
+   \gamma & \delta
+\end{pmatrix}$ with its determinant equal to 1, i.e., $\alpha\delta-\beta\gamma=1$. The corresponding Pauli matrix representation for $(0+1)$ conformal algebra was explored~\cite{Fubini1976}, which may be summarized as 
 \begin{align}
     P^{(0+1)}_{0}=&i\sigma_{-}=\begin{pmatrix}
         0&0\\
         i&0
-    \end{pmatrix},\\
-    \mathfrak{K}^{(0+1)}_{{0}}=&-i\sigma_{+}=\begin{pmatrix}
-        0&-i\\
-        0&0
-    \end{pmatrix},\\
+    \end{pmatrix},\label{P01Pauli}\\
     D^{(0+1)}_{0}=&\frac{i}{2}\sigma_{3}=\begin{pmatrix}
         \frac{i}{2}&0\\
         0&-\frac{i}{2}
-    \end{pmatrix},
+    \end{pmatrix},\label{D01Pauli}\\
+    \mathfrak{K}^{(0+1)}_{{0}}=&-i\sigma_{+}=\begin{pmatrix}
+        0&-i\\
+        0&0
+    \end{pmatrix},\label{KK01Pauli}
 \end{align}
-where $\sigma_{\pm}=\frac{\sigma_{1}\pm i\sigma_{2}}{2}$. With this Pauli matrices representation, it is easy to check that the group in question is isomorphic to the $SO(2,1)$ group}. Time can not be implemented as an operator in quantum mechanics. In Ref.\cite{Fubini1976}, time was not an operator but a parameter, and the time-dependent field operators were introduced to quantify the field operators at equal time. The quantization of field operators is referred to as the second quantization, in contrast to the usual quantization in quantum mechanics. According to Pauli's theorem\cite{Galapon1999}, time cannot be an operator. However, one can still find the commutation relations among the three generators of the conformal symmetry group as shown in Table \ref{tabelinterpolationifd01}. 
-
+where $\sigma_{\pm}=\frac{\sigma_{1}\pm i\sigma_{2}}{2}$. With this representation, it is easy to check that the (0+1)-conformal group is isomorphic to the $SO(2,1)$ group. The commutation relations among the three generators of the conformal symmetry group can be found as shown in Table~\ref{tabeIFD01}.  
+%
 \begin{table}[h!]
 \centering
-\caption{\label{tabelinterpolationifd01}$0+1$ conformal algebra in IFD}
+\caption{\label{tabeIFD01}$0+1$ conformal algebra in IFD}
 \scalebox{1.2}{
 \begin{tabular}{|>{\centering\arraybackslash}p{1.5cm}||>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|}
         \hline
@@ -217,15 +220,46 @@ where $\sigma_{\pm}=\frac{\sigma_{1}\pm i\sigma_{2}}{2}$. With this Pauli matric
         \hline
       \end{tabular}}
 \end{table}
-%{\color{red} ``State about the Moebius transformation and 2x2 matrix representations in terms of Pauli matrices. Write the correspondence between conformal generators and Pauli matrices as done already by Furlan, F ubuni, etc.}
+%{\color{red} ``State about the Moebius transformation and 2x2 matrix representations in terms of Pauli matrices. Write the correspondence between conformal generators and Pauli matrices as done already by Furlan, Fubini, etc.}
+Such a derivation of the $(0+1)$-conformal algebra may be regarded as the simplest possible conformal symmetry built in the lowest dimension. Nevertheless, it has been explored for the local isomorphism between this lowest dimension $(0+1)$-conformal group and the isometries of AdS$_2$ represented by the group $SO(2, 1) $for the discussion of confinement in the light-front Hamiltonian dynamics~\cite{Brodsky_2015}.  
 
-Such a derivation of the $(0+1)$-conformal algebra can thus be regarded as the conformal symmetry's lowest-dimensional quantum field theoretic derivation. The local isomorphism between the conformal group in one dimension and the group
-$SO(2, 1)$ is fundamental for introducing the scale for confinement in the light-front
-Hamiltonian. The Ref.\cite{Brodsky_2015} explored local isomorphism between this lowest dimension $(0+1)$-conformal group and the isometries of AdS$_2$.
+The 1-space \& 0-time $(1+0)$ dimensional conformal algebra may be derived correspondingly following the procedure illustrated in the above derivation of the 0-space \& 1-time $(0+1)$ dimensional conformal algebra. Namely, the correspondence between $x^0$ and $x^3$ provides the transformation generated by $(1+0)$ conformal generators, and thus the space $x^3$ transformation can also be embodied as a single projective transformation (Möbius transformation) defined as
+\begin{align}
+    x_{3}\rightarrow x^{\prime}_{3}=\frac{\alpha x_{3} +\beta}{\gamma x_{3} +\delta},
+\end{align}
+where the real numbers: $\alpha, \beta, \gamma, \delta$ can be considered as the elements of a real unimodular matrix, namely $\begin{pmatrix}
+    \alpha &   \beta \\
+  \gamma & \delta
+\end{pmatrix}$ with $\alpha\delta-\beta\gamma=1$. 
+The three conformal generators here may also be identified 
+correspondingly to Eqs.\eqref{P01}-\eqref{KK01} as 
+\begin{align}
+    P^{(1+0)}_{3}=&i\partial_{3},\label{P10}\\
+    D^{(1+0)}_{3}=&-ix_{3}\partial_{3}.\label{D10}\\
+    \mathfrak{K}^{(1+0)}_{{3}}=&-ix_{3}x_{3}\partial_{{3}},\label{KK10}
+\end{align}
+respectively. Following the Pauli-matrix representation of the $(0+1)$ conformal algebra, we may correspond the three generators in Eqs.\eqref{P01Pauli}-\eqref{KK01Pauli} as 
+\begin{align}
+    P^{(1+0)}_{3}=&i\sigma_{-}=\begin{pmatrix}
+        0&0\\
+        i&0
+    \end{pmatrix},\label{P10Pauli}\\
+    D^{(1+0)}_{3}=&\frac{i}{2}\sigma_{3}=\begin{pmatrix}
+        \frac{i}{2}&0\\
+        0&-\frac{i}{2}
+    \end{pmatrix},\label{D10Pauli}\\
+    \mathfrak{K}^{(1+0)}_{{3}}=&+i\sigma_{+}=\begin{pmatrix}
+        0&i\\
+        0&0
+    \end{pmatrix},\label{KK10Pauli}
+\end{align}
+where $\sigma_{\pm}=\frac{\sigma_{1}\pm i\sigma_{2}}{2}$. 
+It yields again the isomorphic $SO(2,1)$ group representation of the $(1+0)$ conformal algebra as we expect from the correspondence between space $x^3$ and time $x^0$. The commutation relations among the three generators Eqs.\eqref{P01Pauli}-\eqref{KK01Pauli} can also be summarized correspondingly to Table~\ref{tabeIFD01} as 
+Table~\ref{tabeIFD10}.   
 
 \begin{table}[h!]
 \centering
-\caption{\label{tabelinterpolationifd10}$1+0$ conformal algebra in IFD}
+\caption{\label{tabeIFD10}$1+0$ conformal algebra in IFD}
 \scalebox{1.2}{
 \begin{tabular}{|>{\centering\arraybackslash}p{1.5cm}||>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|}
         \hline
@@ -240,7 +274,8 @@ Hamiltonian. The Ref.\cite{Brodsky_2015} explored local isomorphism between this
       \end{tabular}}
 \end{table}
 
-Likewise, one can find the commutation relations among the three generators given by Eqs. (6)-(8) as a quantum field theoretic derivation. However, the $(1+0)$-conformal algebra can also be obtained in the usual quantum mechanics, utilizing the position operator. Namely, the exact conformal algebra in $(1+0)$ dimension can be derived by taking the position operator in the matrix formulation of the one-dimensional simple harmonic oscillator $(\hbar=\omega=c=1)$, with $x_3=\frac{a+a^{\dagger}}{\sqrt{2}}$ and $P_3=i\frac{a^{\dagger}-a}{\sqrt{2}}$.
+{\color{red} "discuss the difference }
+Likewise, one can find the commutation relations among the three generators given by Eqs. \eqref{P10}-\eqref{D10} as a quantum field theoretic derivation. However, the $(1+0)$-conformal algebra can also be obtained in the usual quantum mechanics, utilizing the position operator. Namely, the exact conformal algebra in $(1+0)$ dimension can be derived by taking the position operator in the matrix formulation of the one-dimensional simple harmonic oscillator $(\hbar=\omega=c=1)$, with $x_3=\frac{a+a^{\dagger}}{\sqrt{2}}$ and $P_3=i\frac{a^{\dagger}-a}{\sqrt{2}}$.
 The creation-annihilation operator algebra can be utilized to discuss the physical meaning of each operator in terms of the number of quanta. While the momentum operator $P_3^{(1+0)}$ creates/annihilates a single quantum energy $\hbar \omega$, the dilation operator $D_3^{1+0}$ and the special conformal operator $\mathfrak{K}_{{3}}^{(1+0)}$ create/annihilate up to two and three quanta of $2\hbar\omega$ and $3\hbar\omega$, respectively.
 The conformal algebra summarized in Table II is consistent with the creation/annihilation algebra prescribed in a one-dimensional simple harmonic oscillator.  
 This leads us to consider the Fock space of the simple harmonic oscillator representation and discuss the coherent states of the simple harmonic oscillator in one dimension. 
@@ -252,35 +287,6 @@ Since the generators of dilation and SCT can be reduced to $D_{3}=\frac{-1}{2}\l
     \mathfrak{K}^{(1+0)}_{{3}}=&\frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right)\label{creation_anni_KK}.
 \end{align}
 %{\color{red} ``State about the Moebius transformation and 2x2 matrix representations in terms of Pauli matrices. Write the correspondence between conformal generators and Pauli matrices as done already by Furlan, F ubuni, etc. Relate the Pauli matrices in terms of creation and annihilation operators.}
-{\color{red} The transformation generated by $(1+0)$ conformal generators can also be embodied as a single projective transformation (Möbius transformation) defined as
-\begin{align}
-    x_{3}\rightarrow x^{\prime}_{3}=\frac{\alpha x_{3} +\beta}{\gamma x_{3} +\delta}
-\end{align}
-where the real numbers: $\alpha, \beta, \gamma, \delta$ can be considered as the elements of a real unimodular matrix, namely $\begin{pmatrix}
-    \alpha & \gamma\\
-    \beta & \delta
-\end{pmatrix}$ with $\alpha\delta-\beta\gamma=1$. Following the $(0+1)$ conformal algebra Pauli matrices representation, we find $SO(2,1)$ representation of $(1+0)$ conformal algebra which reads,
-\begin{align}
-    P^{(1+0)}_{3}=&i\sigma_{-}=\begin{pmatrix}
-        0&0\\
-        i&0
-    \end{pmatrix},\\
-    \mathfrak{K}^{(1+0)}_{{3}}=&+i\sigma_{+}=\begin{pmatrix}
-        0&i\\
-        0&0
-    \end{pmatrix},\\
-    D^{(1+0)}_{3}=&\frac{i}{2}\sigma_{3}=\begin{pmatrix}
-        \frac{i}{2}&0\\
-        0&-\frac{i}{2}
-    \end{pmatrix},
-\end{align}
-where $\sigma_{\pm}=\frac{\sigma_{1}\pm i\sigma_{2}}{2}$. Both Pauli matrices $SO(2,1)$ representation and harmonic oscillator representation Eqs \ref{creation_anni_P}, \ref{creation_anni_D}, \ref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabelinterpolationifd10}. We map both representations as
-\begin{align}
-    i\sigma_{-}&\leftrightarrow i\frac{(a^{\dagger}-a)}{\sqrt{2}},\\
-    i\sigma_{+}&\leftrightarrow \frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right),\\
-    \frac{i}{2}\sigma_{3}&\leftrightarrow \frac{-i}{2}\left(a^{\dagger 2} - a^2+1\right).
-\end{align} 
-}
 We find that under translation $P^{(0+1)}_{3}$ the creation and annihilation operators transform as
 \begin{align}
     a \rightarrow a^{\prime}_{P^{(1+0)}_{3}}&=a +c \frac{1}{\sqrt{2}}\\
@@ -339,8 +345,19 @@ We will defer further exploration of the coherent state $\ket{\Omega_{\mathfrak{
 our future work.
 %will further explore the coherent states and simplified vacuum shift under SCT. 
 
+{\color{red} Both Pauli matrices $SO(2,1)$ representation Eqs. \eqref{P10Pauli}-\eqref{KK10Pauli} and harmonic oscillator representation Eqs. \eqref{creation_anni_P}-\eqref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabeIFD10}. We map both representations as
+\begin{align}
+    i\sigma_{-}&\leftrightarrow i\frac{(a^{\dagger}-a)}{\sqrt{2}},\\
+    i\sigma_{+}&\leftrightarrow \frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right),\\
+    \frac{i}{2}\sigma_{3}&\leftrightarrow \frac{-i}{2}\left(a^{\dagger 2} - a^2+1\right).
+\end{align} 
+}
+
 \section{Interpolating conformal algebra in \texorpdfstring{$(1+1)$}{Lg} dimensions}
 \label{sec:conformal}
+
+{\color{red} 
+However, the time itself can not be implemented as an operator in quantum mechanics according to Pauli's theorem\cite{Galapon1999}. In Ref.\cite{Fubini1976}, indeed, the time itself was not an operator but a parameter, and the time-dependent field operators were introduced to quantify the field operators at equal time. It leads to the second quantization, i.e. the quantization of field operators, in contrast to the usual first quantization in quantum mechanics.}
 Having discussed the lowest-dimensional conformal algebra in $(0+1)$ or $(1+0)$ dimension, we now consider the conformal algebra in the next higher dimension, i.e., the $(1+1)$ dimension. Here, the generators are given by
 \begin{align}
     P^{(1+1)}_{0}=&i\partial_{0}\\
@@ -407,7 +424,7 @@ $1+1$ conformal algebra. Note here that the cumbersome superscript (1+1) is remo
 \end{tabular}
 \end{table}
 
-In Table.~\ref{tabelinterpolationifd}, we note the apparent symmetry highlighted by colors in ``blue/cyan" and ``red" denoting the first/second block diagonal part and the two block off-diagonal parts. The first block diagonal part marked by ``blue" coincides with the (0+1) conformal algebra in Table.~\ref{tabelinterpolationifd01}, where the generators $\mathfrak{K}_{{0}}$, $P_0$ and $D$ in Table.~\ref{tabelinterpolationifd} correspond to the respective (0+1) conformal generators $\mathfrak{K}^{(0+1)}_{{0}}$, $P^{(0+1)}_{0}$ and $D^{(0+1)}_{0}$. Likewise, the second block diagonal part marked by ``cyan" appears the same as the first block diagonal part with the respective replacement of $\mathfrak{K}_{{0}}$, $P_0$, and $D$ by 
+In Table.~\ref{tabelinterpolationifd}, we note the apparent symmetry highlighted by colors in ``blue/cyan" and ``red" denoting the first/second block diagonal part and the two block off-diagonal parts. The first block diagonal part marked by ``blue" coincides with the (0+1) conformal algebra in Table.~\ref{tabeIFD01}, where the generators $\mathfrak{K}_{{0}}$, $P_0$ and $D$ in Table.~\ref{tabelinterpolationifd} correspond to the respective (0+1) conformal generators $\mathfrak{K}^{(0+1)}_{{0}}$, $P^{(0+1)}_{0}$ and $D^{(0+1)}_{0}$. Likewise, the second block diagonal part marked by ``cyan" appears the same as the first block diagonal part with the respective replacement of $\mathfrak{K}_{{0}}$, $P_0$, and $D$ by 
 $\mathfrak{K}_{{3}}$, $P_3$ and $K_3$ and the correspondence between $D$ and $K_3$. Similarly, the two block off-diagonal parts, marked in red, correspond to each other, with an apparent symmetry between them. 
 
 Due to Pauli's theorem\cite{Galapon1999}, however, the time cannot be taken as an operator in contrast to the position operator discussed in the previous section, Sec.~\ref{sec:conformal0110}. Thus, in the $(1+1)$ dimensional relativistic theories, it is natural to demote the position operator from the operator level to the parameter level, as the time and position can mix at the same level due to the relativity. This feature of the position parameter, in contrast to the position operator, leads to   
@@ -670,8 +687,27 @@ We find that $SO(2,1+1)$ splits into a direct sum of two identical algebras:
 \begin{align}
     SO(2,1+1)\simeq SO(2,1)\oplus SO(2,1)
 \end{align}
-which is equivalent to Witt algebra in Minkowski space as we discuss in the next section.
+which is equivalent to Witt algebra in Minkowski space, as we discuss in the next section.
 
+    \begin{center}
+        \begin{table*}[t]
+  \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
+    \begin{ruledtabular}
+       \begin{tabular}{lcc}
+	%\hline
+	 %\hline
+	Interpolation angle & Kinematic & Dynamic \\
+	\hline
+	\rule{0pt}{3ex} $\delta=0$ & $P^{3}$, $D$ & $ K^{3}$, $P^{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
+	$0\leq\delta<\pi/4$ &  $P_{\mT}$, $\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$, $\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$ &  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
+	$\delta=\pi/4$ & $P_{-}$, $D_{+}$, $D_{-}$, $\mathfrak{K}_{{+}}$& $P_{+}$, $\mathfrak{K}_{{-}}$\\
+	%\hline
+	 %\hline
+      \end{tabular}
+    \end{ruledtabular}
+\end{table*}
+    \end{center}
+    
 \section{Interpolating  Witt-type algebra}
 \label{sec_Witt-type}
 The condition Eq.\eqref{Killing} for invariance under infinitesimal conformal transformations in Euclidean two dimensions gives Cauchy–Riemann equations \cite{Francesco, Blumenhagen}. In general, conformal generators in Euclidean two dimensions are infinity dimensional, which are given by $l_n=-z^{n+1}\partial_{z},~\Bar{l}_n=-\Bar{z}^{n+1}\partial_{\Bar{z}}$, where $z=x^t+ix^3,~ \Bar{z}=x^t-ix^3$, but the globally defined conformal transformations on the Riemann sphere are generated by $l_{-1}$, $l_{0}$, $l_{+1}$, $\Bar{l}_{-1}$, $\Bar{l}_{0}$, and $\Bar{l}_{+1}$. These generators obey the Witt algebra in Euclidean complex space. The corresponding generators in Minkowski space-time can be attained by doing a Wick rotation from Euclidean to Minkowski space: $x^t\longrightarrow -ix^{0}$ and $x^3\longrightarrow x^{3}$. We extend our interpolation to a more general Witt-type algebra and introduce the interpolating generators, which read
@@ -739,26 +775,8 @@ which reproduces the full commutation table mentioned in Table~\ref {tabelinterp
     SO(2,1+1)\simeq SO(2,1)\oplus SO(2,1).
 \end{align}
 
-\begin{widetext}
-    \begin{center}
-        \begin{table*}[t]
-  \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
-    \begin{ruledtabular}
-       \begin{tabular}{lcc}
-	%\hline
-	 %\hline
-	Interpolation angle & Kinematic & Dynamic \\
-	\hline
-	\rule{0pt}{3ex} $\delta=0$ & $P^{3}$, $D$ & $ K^{3}$, $P^{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
-	$0\leq\delta<\pi/4$ &  $P_{\mT}$, $\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$, $\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$ &  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
-	$\delta=\pi/4$ & $P_{-}$, $D_{+}$, $D_{-}$, $\mathfrak{K}_{{+}}$& $P_{+}$, $\mathfrak{K}_{{-}}$\\
-	%\hline
-	 %\hline
-      \end{tabular}
-    \end{ruledtabular}
-\end{table*}
-    \end{center}
-\end{widetext}
+
+
 
 \section{Summary and Conclusion}
 \label{summary-conclusion}
@@ -771,7 +789,7 @@ which reproduces the full commutation table mentioned in Table~\ref {tabelinterp
     \item 0+1 corresponds to Furlan and Fubini, etc., Moebius transformation, three 2x2 matrix representations of conformal generators, Pauli matrices
     \item 1+0
     SHO
-    \item observation of the number of kinematic generators
+    \item observation of the number of kinematic generators: Table \ref{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}
     \item projective space representations and their algebra are forthcoming... 
 \end{itemize}
 
