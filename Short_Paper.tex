@@ -274,11 +274,11 @@ Table~\ref{tabeIFD10}.
       \end{tabular}}
 \end{table}
 
-{\color{red} "discuss the difference }
-Likewise, one can find the commutation relations among the three generators given by Eqs. \eqref{P10}-\eqref{D10} as a quantum field theoretic derivation. However, the $(1+0)$-conformal algebra can also be obtained in the usual quantum mechanics, utilizing the position operator. Namely, the exact conformal algebra in $(1+0)$ dimension can be derived by taking the position operator in the matrix formulation of the one-dimensional simple harmonic oscillator $(\hbar=\omega=c=1)$, with $x_3=\frac{a+a^{\dagger}}{\sqrt{2}}$ and $P_3=i\frac{a^{\dagger}-a}{\sqrt{2}}$.
-The creation-annihilation operator algebra can be utilized to discuss the physical meaning of each operator in terms of the number of quanta. While the momentum operator $P_3^{(1+0)}$ creates/annihilates a single quantum energy $\hbar \omega$, the dilation operator $D_3^{1+0}$ and the special conformal operator $\mathfrak{K}_{{3}}^{(1+0)}$ create/annihilate up to two and three quanta of $2\hbar\omega$ and $3\hbar\omega$, respectively.
-The conformal algebra summarized in Table II is consistent with the creation/annihilation algebra prescribed in a one-dimensional simple harmonic oscillator.  
-This leads us to consider the Fock space of the simple harmonic oscillator representation and discuss the coherent states of the simple harmonic oscillator in one dimension. 
+While we achieve essentially identical conformal algebras for $(0+1)$ dimensions and $(1+0)$ dimensions, we note a remarkable difference between time $x^0$ and position $x^3$, as time is absolute and doesn't mix with position in non-relativistic quantum mechanics. 
+Indeed, there is a theorem known as Pauli's theorem, which states that time cannot be an operator but should be taken as a parameter, more precisely, an evolution parameter of a dynamical system.   
+However, the position can be taken as an operator in quantum mechanics, and the $(1+0)$-conformal algebra summarized in Table~\ref{tabeIFD10} can be re-derived from the perspectives of the quantum operator algebra. Namely, the exact conformal algebra in $(1+0)$ dimension can be re-derived by taking the position operator in the matrix formulation of the one-dimensional simple harmonic oscillator $(\hbar=\omega=c=1)$, with $x_3=\frac{a+a^{\dagger}}{\sqrt{2}}$ and $P_3=i\frac{a^{\dagger}-a}{\sqrt{2}}$.
+Thus, we may utilize the creation-annihilation operators and discuss the (1+0)-conformal algebra in terms of the ladder operators in the Hilbert space which can be defined by the number operator $N=a^{\dagger} a$,
+satisfying $[N,a] = -a$ and $[N,a^{\dagger}]= a^\dagger$. 
 
 Since the generators of dilation and SCT can be reduced to $D_{3}=\frac{-1}{2}\left(\{x_{3}, P_{3}\}+i\right)$ and $\mathfrak{K}_{{3}}=\frac{-1}{2}\left(\{x_{3}x_{3}, P_{3}\}+i2x_{3}\right)$, we find
 \begin{align}
@@ -286,32 +286,47 @@ Since the generators of dilation and SCT can be reduced to $D_{3}=\frac{-1}{2}\l
     D^{(1+0)}_{3}=&\frac{-i}{2}\left(a^{\dagger 2} - a^2+1\right)\label{creation_anni_D}\\
     \mathfrak{K}^{(1+0)}_{{3}}=&\frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right)\label{creation_anni_KK}.
 \end{align}
+
+Both Pauli matrices $SO(2,1)$ representation Eqs. \eqref{P10Pauli}-\eqref{KK10Pauli} and harmonic oscillator representation Eqs. \eqref{creation_anni_P}-\eqref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabeIFD10}. From the correspondence between them, we note mapping both representations as
+\begin{align}
+    i\sigma_{-}&\leftrightarrow i\frac{(a^{\dagger}-a)}{\sqrt{2}},\\
+    i\sigma_{+}&\leftrightarrow \frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right),\\
+    \frac{i}{2}\sigma_{3}&\leftrightarrow \frac{-i}{2}\left(a^{\dagger 2} - a^2+1\right).
+\end{align} 
+
+While the momentum operator $P_3^{(1+0)}$ creates/annihilates a single quantum energy $\hbar \omega$, the dilation operator $D_3^{1+0}$ and the special conformal operator $\mathfrak{K}_{{3}}^{(1+0)}$ create/annihilate up to two and three quanta of $2\hbar\omega$ and $3\hbar\omega$, respectively. 
+Using Eqs. (\ref{creation_anni_P})-(\ref{creation_anni_KK}), we indeed find that 
+the conformal algebra summarized in Table II is consistent with the creation/annihilation algebra prescribed in a one-dimensional simple harmonic oscillator. This leads us to consider the Fock space of the simple harmonic oscillator representation and discuss the coherent states of the simple harmonic oscillator in relation to the generators of the conformal algebra. 
+
+
 %{\color{red} ``State about the Moebius transformation and 2x2 matrix representations in terms of Pauli matrices. Write the correspondence between conformal generators and Pauli matrices as done already by Furlan, F ubuni, etc. Relate the Pauli matrices in terms of creation and annihilation operators.}
 We find that under translation $P^{(0+1)}_{3}$ the creation and annihilation operators transform as
 \begin{align}
-    a \rightarrow a^{\prime}_{P^{(1+0)}_{3}}&=a +c \frac{1}{\sqrt{2}}\\
-    a^{\dagger} \rightarrow a^{\dagger\prime}_{P^{(1+0)}_{3}}&=a^{\dagger} +c \frac{1}{\sqrt{2}}
+    a \rightarrow a^{\prime}_{P^{(1+0)}_{3}}=e^{ic P_{3}}ae^{-ic P_{3}}&=a +\frac{c}{\sqrt{2}}\\
+    a^{\dagger} \rightarrow a^{\dagger\prime}_{P^{(1+0)}_{3}}=e^{ic P_{3}}a^{\dagger}e^{-ic P_{3}}&=a^{\dagger} + \frac{c}{\sqrt{2}}
 \end{align}
 where $c$ is a parameter representing the displacement. The displaced ground state of the SHO is known as the coherent state, as it is the eigenstate of the annihilation operator\cite{Glauber1963}. The new coherent vacuum $\ket{\Omega_{P_{3}}}$ by created by $a^{\dagger\prime}_{P^{(1+0)}_{3}}$ is given by
 \begin{align}
-    \ket{\Omega_{P_{3}}}&=e^{-\frac{c^2}{4}}e^{-\frac{c}{\sqrt{2}}a^{\dagger}}\ket{0}
+    \ket{\Omega_{P_{3}}}&=e^{ic P_{3}}\ket{0}\\
+    &=e^{-\frac{c^2}{4}}e^{-\frac{c}{\sqrt{2}}a^{\dagger}}\ket{0}
 \end{align}
 where $a\ket{0}=0$. The inner product of the trivial vacuum and the coherent vacuum is not zero as $\braket{0|\Omega_{P_{3}}} = 
 e^{-\frac{c^2}{4}}$. Normalization of $\ket{\Omega_{P_{3}}}$ reads 
 \begin{align}
 \braket{\Omega_{P_{3}}|\Omega_{P_{3}}} &=1.
 \end{align}
-This normalization is consistent with the expectation that the normalization of the ground state $<0|0> =1$ should be intact under the translation of the state. 
+This normalization is consistent with the expectation that the normalization of the ground state $<0|0> =1$ should be intact under the translation of the state.
 
 We note that there is another type of coherent state besides Glauber's coherent state under the dilation $D^{(1+0)}_{3}$ operator.
 It turns out that the dilation $D^{(1+0)}_{3}$ operator generates  the transformation of the creation and annihilation operators known as the  Bogoliubov-Valatin transformation\cite{umezawa1982thermo}, given by
 \begin{align}
-    a \rightarrow a^{\prime}_{D^{(1+0)}_{3}}&=a\cosh{\alpha}-a^{\dagger}\sinh{\alpha}\label{aD1+0}\\
-    a^{\dagger} \rightarrow a^{\dagger\prime}_{D^{(1+0)}_{3}}&=a^{\dagger}\cosh{\alpha}-a\sinh{\alpha},\label{adaggerD1+0}
+    a \rightarrow a^{\prime}_{D^{(1+0)}_{3}}=e^{i\alpha D_{3}}ae^{-i\alpha D_{3}}&=a\cosh{\alpha}-a^{\dagger}\sinh{\alpha}\label{aD1+0}\\
+    a^{\dagger} \rightarrow a^{\dagger\prime}_{D^{(1+0)}_{3}}=e^{i\alpha D_{3}}a^{\dagger}e^{-i\alpha D_{3}}&=a^{\dagger}\cosh{\alpha}-a\sinh{\alpha},\label{adaggerD1+0}
 \end{align}
 where $\alpha$ is a parameter of dilatation. The new vacuum $\ket{\Omega_{D_{3}}}$ created by $a^{\dagger\prime}_{D^{(1+0)}_{3}}$ is given by
 \begin{align}
-    \ket{\Omega_{D_{3}}}&=\frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\;
+    \ket{\Omega_{D_{3}}}&=e^{i\alpha D_{3}}\ket{0}\\
+    &=\frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\;
      e^{\left(\frac{\tanh\alpha}{2}\,a^{\dagger2}\right)}\ket{0}~,\label{vacuumD3}
 \end{align}
 and the normalization of $\ket{\Omega_{D_{3}}}$ reads
@@ -345,20 +360,17 @@ We will defer further exploration of the coherent state $\ket{\Omega_{\mathfrak{
 our future work.
 %will further explore the coherent states and simplified vacuum shift under SCT. 
 
-{\color{red} Both Pauli matrices $SO(2,1)$ representation Eqs. \eqref{P10Pauli}-\eqref{KK10Pauli} and harmonic oscillator representation Eqs. \eqref{creation_anni_P}-\eqref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabeIFD10}. We map both representations as
-\begin{align}
-    i\sigma_{-}&\leftrightarrow i\frac{(a^{\dagger}-a)}{\sqrt{2}},\\
-    i\sigma_{+}&\leftrightarrow \frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right),\\
-    \frac{i}{2}\sigma_{3}&\leftrightarrow \frac{-i}{2}\left(a^{\dagger 2} - a^2+1\right).
-\end{align} 
-}
 
 \section{Interpolating conformal algebra in \texorpdfstring{$(1+1)$}{Lg} dimensions}
 \label{sec:conformal}
 
-{\color{red} 
-However, the time itself can not be implemented as an operator in quantum mechanics according to Pauli's theorem\cite{Galapon1999}. In Ref.\cite{Fubini1976}, indeed, the time itself was not an operator but a parameter, and the time-dependent field operators were introduced to quantify the field operators at equal time. It leads to the second quantization, i.e. the quantization of field operators, in contrast to the usual first quantization in quantum mechanics.}
-Having discussed the lowest-dimensional conformal algebra in $(0+1)$ or $(1+0)$ dimension, we now consider the conformal algebra in the next higher dimension, i.e., the $(1+1)$ dimension. Here, the generators are given by
+In contrast to the position operator discussed in the previous section, Sec.~\ref{sec:conformal0110}, the time itself can not be implemented as an operator in quantum mechanics according to Pauli's theorem\cite{Galapon1999}. Thus, in the $(1+1)$ dimensional relativistic theories, it is natural to demote the position operator from the operator level to the parameter level, as the time and position can mix at the same level due to the relativity. In Ref.\cite{Fubini1976}, indeed, the time itself was not an operator but a parameter, and the time-dependent field operators were introduced to quantify the field operators at equal time. It leads to the second quantization, i.e., the quantization of field operators, in contrast to the usual first quantization in quantum mechanics.
+%Due to Pauli's theorem\cite{Galapon1999}, however, the time cannot be taken as an operator in contrast to the position operator discussed in the previous section, Sec.~\ref{sec:conformal0110}. 
+This feature of the position parameter, in contrast to the position operator, leads to   
+discussing the conformal algebra in the $(1+1)$ dimensional relativistic quantum field theories 
+with the second quantization
+rather than the quantum mechanical quantization of the position operator itself in terms of the creation and annihilation operators as discussed in the previous section (Sec.\ref{sec:conformal0110}) for the $(1+0)$ dimensional conformal algebra.  
+Based on the discussion of the lowest-dimensional conformal algebra in $(0+1)$ or $(1+0)$ dimension, we now consider the conformal algebra in the next higher dimension, i.e., the $(1+1)$ dimension. Here, the generators are given by
 \begin{align}
     P^{(1+1)}_{0}=&i\partial_{0}\\
     \mathfrak{K}^{(1+1)}_{{0}}=&i(x_{0}x_{0}\partial_{{0}}-2x_{3}x_{0}\partial_{3}+x_{3}x_{3}\partial_{0})\\
@@ -427,10 +439,6 @@ $1+1$ conformal algebra. Note here that the cumbersome superscript (1+1) is remo
 In Table.~\ref{tabelinterpolationifd}, we note the apparent symmetry highlighted by colors in ``blue/cyan" and ``red" denoting the first/second block diagonal part and the two block off-diagonal parts. The first block diagonal part marked by ``blue" coincides with the (0+1) conformal algebra in Table.~\ref{tabeIFD01}, where the generators $\mathfrak{K}_{{0}}$, $P_0$ and $D$ in Table.~\ref{tabelinterpolationifd} correspond to the respective (0+1) conformal generators $\mathfrak{K}^{(0+1)}_{{0}}$, $P^{(0+1)}_{0}$ and $D^{(0+1)}_{0}$. Likewise, the second block diagonal part marked by ``cyan" appears the same as the first block diagonal part with the respective replacement of $\mathfrak{K}_{{0}}$, $P_0$, and $D$ by 
 $\mathfrak{K}_{{3}}$, $P_3$ and $K_3$ and the correspondence between $D$ and $K_3$. Similarly, the two block off-diagonal parts, marked in red, correspond to each other, with an apparent symmetry between them. 
 
-Due to Pauli's theorem\cite{Galapon1999}, however, the time cannot be taken as an operator in contrast to the position operator discussed in the previous section, Sec.~\ref{sec:conformal0110}. Thus, in the $(1+1)$ dimensional relativistic theories, it is natural to demote the position operator from the operator level to the parameter level, as the time and position can mix at the same level due to the relativity. This feature of the position parameter, in contrast to the position operator, leads to   
-discussing the conformal algebra in the $(1+1)$ dimensional relativistic quantum field theories 
-with the so-called second quantization
-rather than the quantum mechanical quantization of the position operator itself in terms of the creation and annihilation operators as discussed in the previous section (Sec.\ref{sec:conformal0110}) for the $(1+0)$ dimensional conformal algebra.  
 
 %{\color{red} revise the following paragraph to discuss (1+1)D conformal algebra discussed in B's lecture notes} Two-dimensional conformal field theories (CFTs) admit an abstract formulation regarding operator algebras and their representation theory, a feature that distinguishes them from quantum field theories in higher dimensions. For many 2D CFTs, a traditional description via a Lagrangian and its corresponding perturbative expansion is unknown. Instead, a non-perturbative bootstrap approach can define and, in some cases, exactly solve these theories. This process is possible due to the unique nature of the algebra associated with infinitesimal conformal transformations in two dimensions. Unlike in higher dimensions, this algebra is infinite-dimensional, which imposes significant constraints \cite{Blumenhagen}. 
 
@@ -699,7 +707,7 @@ which is equivalent to Witt algebra in Minkowski space, as we discuss in the nex
 	Interpolation angle & Kinematic & Dynamic \\
 	\hline
 	\rule{0pt}{3ex} $\delta=0$ & $P^{3}$, $D$ & $ K^{3}$, $P^{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
-	$0\leq\delta<\pi/4$ &  $P_{\mT}$, $\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$, $\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$ &  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
+	$0\leq\delta<\pi/4$ &  $P_{\mT}$, $\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$ &  $\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$,  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
 	$\delta=\pi/4$ & $P_{-}$, $D_{+}$, $D_{-}$, $\mathfrak{K}_{{+}}$& $P_{+}$, $\mathfrak{K}_{{-}}$\\
 	%\hline
 	 %\hline
@@ -801,7 +809,7 @@ which reproduces the full commutation table mentioned in Table~\ref {tabelinterp
 
 \section{Dilated vacuum by $D_{3}^{(1+0)}$} 
 \label{Dilated-vacuum}
-The new vacuum $\ket{\Omega_{D_{3}}}$ created by $a^{\dagger\prime}_{D^{(1+0)}_{3}}$ in Eq. \ref{adaggerD1+0} can be derived similarly to the field theory derivation mentioned in Ref. \cite{umezawa1982thermo}. The dilated vacuum by $D_{3}^{(1+0)}$ can be annihilated by $a^{\prime}_{D^{(1+0)}_{3}}$ from Eq. \ref{aD1+0}, as $ a^{\prime}_{D^{(1+0)}_{3}}\ket{\Omega_{D_{3}}}=0$, which gives, 
+The new vacuum $\ket{\Omega_{D_{3}}}$ created by $a^{\dagger\prime}_{D^{(1+0)}_{3}}$ in Eq. \Ref{adaggerD1+0} can be derived similarly to the field theory derivation mentioned in Ref. \cite{umezawa1982thermo}. The dilated vacuum by $D_{3}^{(1+0)}$ can be annihilated by $a^{\prime}_{D^{(1+0)}_{3}}$ from Eq. \ref{aD1+0}, as $ a^{\prime}_{D^{(1+0)}_{3}}\ket{\Omega_{D_{3}}}=0$, which gives, 
 \begin{align}
     \ket{\Omega_{D_{3}}}=e^{\frac{\alpha}{2}\left(a^{\dagger 2} - a^2+1\right)}\ket{0}
 \end{align}
@@ -876,3 +884,7 @@ then
 \bibliography{BibTeXList}% Produces the bibliography via BibTeX.
 
 \end{document}
+
+
+% The time itself can not be implemented as an operator in quantum mechanics according to Pauli's theorem\cite{Galapon1999}. In Ref.\cite{Fubini1976}, indeed, the time itself was not an operator but a parameter, and the time-dependent field operators were introduced to quantify the field operators at equal time. It leads to the second quantization, i.e., the quantization of field operators, in contrast to the usual first quantization in quantum mechanics.
+%Likewise, one can find the commutation relations among the three generators given by Eqs. \eqref{P10}-\eqref{D10} as a quantum field theoretic derivation. However, the $(1+0)$-conformal algebra can also be obtained in the usual quantum mechanics, utilizing the position operator. 
