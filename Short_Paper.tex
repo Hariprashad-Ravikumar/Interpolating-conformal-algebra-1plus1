@@ -116,7 +116,7 @@ superscriptaddress,
 
 \preprint{APS/123-QED}
 
-\title{Interpolating conformal algebra $(1+1)$ between the instant form
+\title{Interpolating conformal algebra $(1+1)$ dimensions between the instant form
 and the front form of relativistic dynamics}
 
 \author{Chueng-Ryong Ji}
@@ -127,7 +127,14 @@ and the front form of relativistic dynamics}
 
 
 \begin{abstract}
-{\color{blue} The instant form and the front form of relativistic dynamics introduced by P. M. Dirac in 1949 can be interpolated by introducing an interpolation angle parameter $\delta$ spanning between the instant form dynamics (IFD) at $\delta=0$ and the front form dynamics, which is now known as the light-front dynamics (LFD) at $\delta=\frac{\pi}{4}$. We extend the Poincar\'e algebra interpolation between instant and light-front time quantizations to the conformal algebra $(1+1)$. Among the three more generators in the conformal algebra, only one generator, known as the dilatation, is kinematic for the entire region of the interpolation angle ($0\leq\delta\leq\frac{\pi}{4}$). We find that one more generator from the Special Conformal Transformation (SCT) becomes kinematic in the light-front limit ($\delta=\frac{\pi}{4}$), i.e., the LFD.} %We present the 4-dimensional matrix representation of the conformal group.} %%%%
+{\color{blue} We present the interpolating conformal algebra between the instant form dynamics (IFD) and the light-front dynamics (LFD) in $(1+1)$ dimensions. 
+While there are six generators  in the $(1+1)$ dimensional conformal algebra, the number of kinematic and dynamic generators dramatically changes 
+in LFD, maximizing (minimizing) the number of kinematic 
+(dynamic) generators to four (two) with respect to two (four)
+kinematic (dynamic) generators in IFD, as well as in any other forms of dynamics between IFD and LFD. It confirms and signifies the utility of LFD, saving substantial dynamical efforts in solving the $(1+1)$ dimensional quantum field theories.    
+
+%The instant form and the front form of relativistic dynamics introduced by P. M. Dirac in 1949 can be interpolated by introducing an interpolation angle parameter $\delta$ spanning between the instant form dynamics (IFD) at $\delta=0$ and the front form dynamics, which is now known as the light-front dynamics (LFD) at $\delta=\frac{\pi}{4}$. 
+%one generator, known as the dilatation, is kinematic for the entire region of the interpolation angle ($0\leq\delta\leq\frac{\pi}{4}$). We find that one more generator from the Special Conformal Transformation (SCT) becomes kinematic in the light-front limit ($\delta=\frac{\pi}{4}$), i.e., the LFD.} %We present the 4-dimensional matrix representation of the conformal group.} %%%%
 \end{abstract}
 %\keywords{Suggested keywords}%Use showkeys class option if keyword
                               %display desired
@@ -142,7 +149,7 @@ and the front form of relativistic dynamics}
 
 Conformal field theories require either a continuous or a vanishing mass spectrum. When all relevant energies are very high, it is reasonable to neglect all masses and thus recover scale invariance. For example, in the case of quantum electrodynamics, at very high energies and momentum transfers (compared to the electron mass), the scattering amplitudes should display the characteristics of a scale-invariant theory, as if the electron were massless. 
 
-In the 1960s, Gross \cite{Gross1970} explored this scale invariance as an asymptotic (high-energy) symmetry of scattering amplitudes and also proved that the scale invariance of Lagrangian field theories implies conformal invariance. A list of literature discussing the physical significance and potential applications of scale and conformal invariance can be found in Refs. \cite{Wess1960, Gürsey1956, Fulton1962, Kastrup1966, SalamMack1969, Wilson1969, Gross1970}. Additionally, a historical review in Ref. \cite{Kastrup2008} provides further early references on this topic. Aspects of the conformal group in two-dimensional Minkowski space-time, with Representations of the algebra and of the group within a field-theoretic Schrodinger representation for bosons and fermions, were reviewed in Ref.\cite{Jackiw1990}.}
+In the 1960s, Gross \cite{Gross1970} explored this scale invariance as an asymptotic (high-energy) symmetry of scattering amplitudes and also proved that the scale invariance of Lagrangian field theories implies conformal invariance. A list of literature discussing the physical significance and potential applications of scale and conformal invariance can be found in Refs. \cite{Wess1960, Gürsey1956, Fulton1962, Kastrup1966, SalamMack1969, Wilson1969, Gross1970}. Additionally, a historical review in Ref. \cite{Kastrup2008} provides further early references on this topic. Aspects of the conformal group in two-dimensional Minkowski space-time, with representations of the algebra and of the group within a field-theoretic Schrodinger representation for bosons and fermions, were reviewed in Ref.\cite{Jackiw1990}.}
 
 %\textcolor{red}{need to add a review of conformal theories - SM \& SM cosmology; Add a few references for SM (Jackiew, Furlan, Fubuni, Glashaw, high-energy physics articles discussing conformal symmetry) and SM-cosmology (FRW-cosmology review, Blumenheim, etc.).}
 In general, the conformal transformation $x\longmapsto x'$ in $d$ dimension can be defined as \cite{Francesco,Blumenhagen}, 
@@ -165,11 +172,11 @@ where $F(x)=\Lambda(x)-1-\mathcal{O}(\epsilon^2)$. The Eq.\eqref{Killing} is cal
 In finite form, the SCT will be $x'^{\mu }={\frac {x^{\mu }-b^{\mu }x^{2}}{1-2b\cdot x+b^{2}x^{2}}}$, this can be understood as an inversion of $x^\mu$, followed by a translation $b^\mu$, and followed again by an inversion \cite{Blumenhagen}.
 
 In the next section, Sec.~\ref{sec:conformal0110}, we present the one-dimensional conformal algebra and its representation in terms of creation and annihilation operators of a harmonic oscillator. In Sec .~\ref{sec:conformal}, we extend the interpolation method from the Poincar\'e group to the conformal group. We demonstrate that the $SO(2, 1 + 1)$ algebra decomposes into a direct sum of two identical algebras in the light-front limit. The interpolating Witt-type algebra is introduced in Sec.~\ref{sec_Witt-type}. 
-%In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles. Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
-Summary and conclusion follow in the last section, Sec.~\ref{summary-conclusion}.
-In Appendix~\ref{Dilated-vacuum}, 
-we present the more detailed derivation discussed in Sec.~\ref{sec:conformal0110} regarding the coherent vacuum ($\ket{\Omega_{D_{3}}}$)
- associated with the dilation.
+
+
+In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles. %Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
+Summary and conclusion follow in the last section, Sec.~\ref{summary-conclusion}. In Appendix~\ref{Dilated-vacuum},  we present the more detailed derivation discussed in Sec.~\ref{sec:conformal0110} regarding the coherent vacuum ($\ket{\Omega_{D_{3}}}$) associated with the dilation. Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
+
 
 \section{conformal algebra in \texorpdfstring{$(0+1)$}
 {Lg} and \texorpdfstring{$(1+0)$}{Lg} dimension}
@@ -277,7 +284,7 @@ Table~\ref{tabeIFD10}.
 While we achieve essentially identical conformal algebras for $(0+1)$ dimensions and $(1+0)$ dimensions, we note a remarkable difference between time $x^0$ and position $x^3$, as time is absolute and doesn't mix with position in non-relativistic quantum mechanics. 
 Indeed, there is a theorem known as Pauli's theorem, which states that time cannot be an operator but should be taken as a parameter, more precisely, an evolution parameter of a dynamical system.   
 However, the position can be taken as an operator in quantum mechanics, and the $(1+0)$-conformal algebra summarized in Table~\ref{tabeIFD10} can be re-derived from the perspectives of the quantum operator algebra. Namely, the exact conformal algebra in $(1+0)$ dimension can be re-derived by taking the position operator in the matrix formulation of the one-dimensional simple harmonic oscillator $(\hbar=\omega=c=1)$, with $x_3=\frac{a+a^{\dagger}}{\sqrt{2}}$ and $P_3=i\frac{a^{\dagger}-a}{\sqrt{2}}$.
-Thus, we may utilize the creation-annihilation operators and discuss the (1+0)-conformal algebra in terms of the ladder operators in the Hilbert space which can be defined by the number operator $N=a^{\dagger} a$,
+Thus, we may utilize the creation-annihilation operators and discuss the (1+0)-conformal algebra in terms of the ladder operators in the Hilbert space, which can be defined by the number operator $N=a^{\dagger} a$,
 satisfying $[N,a] = -a$ and $[N,a^{\dagger}]= a^\dagger$. 
 
 Since the generators of dilation and SCT can be reduced to $D_{3}=\frac{-1}{2}\left(\{x_{3}, P_{3}\}+i\right)$ and $\mathfrak{K}_{{3}}=\frac{-1}{2}\left(\{x_{3}x_{3}, P_{3}\}+i2x_{3}\right)$, we find
@@ -287,7 +294,7 @@ Since the generators of dilation and SCT can be reduced to $D_{3}=\frac{-1}{2}\l
     \mathfrak{K}^{(1+0)}_{{3}}=&\frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right)\label{creation_anni_KK}.
 \end{align}
 
-Both Pauli matrices $SO(2,1)$ representation Eqs. \eqref{P10Pauli}-\eqref{KK10Pauli} and harmonic oscillator representation Eqs. \eqref{creation_anni_P}-\eqref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabeIFD10}. From the correspondence between them, we note mapping both representations as
+Both Pauli matrices $SO(2,1)$ representation, Eqs. \eqref{P10Pauli}-\eqref{KK10Pauli} and harmonic oscillator representation Eqs. \eqref{creation_anni_P}-\eqref{creation_anni_KK} obey the $(1+0)$ conformal algebra stated in Table \ref{tabeIFD10}. From the correspondence between them, we note mapping both representations as
 \begin{align}
     i\sigma_{-}&\leftrightarrow i\frac{(a^{\dagger}-a)}{\sqrt{2}},\\
     i\sigma_{+}&\leftrightarrow \frac{-i}{2\sqrt{2}}\left(3a+3a^{\dagger}+  a^{\dagger 2}a - a^3 +  a^{\dagger 3} - a^2 a^{\dagger}\right),\\
@@ -564,7 +571,7 @@ A similar simplification of conformal algebra with a fully diagonal metric was m
 %$J^0_{12} =J_{-2-1}, J^0_{23} =J_{-10}, J^0_{31}=J_{0-2}$, and $J^3_{12} =J_{30}, J^3_{23} =J_{-13}, J^3_{31}=J_{-23}$. 
 Note here that both $J^{(0)}_{pq}$ and $J^{(3)}_{rs}$ are antisymmetric matrices, i.e. $J^{(0)}_{pq} = - J^{(0)}_{qp}$ and $J^{(3)}_{rs}=-J^{(3)}_{sr}$, inheriting the characteristic antisymmetric property of $J_{ab}$, i.e. $J_{ab}=-J_{ba}$.  
 This splitting of time and space 
-translations with the two $3\times3$ matrices denoted by $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$, respectively, allow us the interpolation of the conformal algebra in (1+1)D as we have interpolated the time and space translations, $J^{(0)}_{23}=\frac{P_0}{\sqrt{2}}$ and $J^{(3)}=\frac{P_3}{\sqrt{2}}$. Indeed, it is remarkable to note that the arrangement of each and every element of $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$ is characteristically consistent. In particular, not only the correspondence between $J^{(0)}_{13}=\frac{-\mathfrak{K}_0}{\sqrt{2}}$ and $J^{(3)}=\frac{\mathfrak{K}_3}{\sqrt{2}}$ matches consistently with the correspondence between $J^{(0)}_{23}=\frac{P_0}{\sqrt{2}}$ and $J^{(3)}=\frac{P_3}{\sqrt{2}}$ but also the correspondence between $J^{(0)}_{12}=-D$ and $J^{(3)}_{12}=K^3$ provides the consistent characteristics of the physical length contraction and time dilation physical phenomena realized by the dilation of space and time. 
+translations with the two $3\times3$ matrices denoted by $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$, respectively, allow us the interpolation of the conformal algebra in (1+1)D as we have interpolated the time and space translations, $J^{(0)}_{23}=\frac{P_0}{\sqrt{2}}$ and $J^{(3)}=\frac{P_3}{\sqrt{2}}$. Indeed, it is remarkable to note that the arrangement of each and every element of $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$ is characteristically consistent. In particular, not only the correspondence between $J^{(0)}_{13}=\frac{-\mathfrak{K}_0}{\sqrt{2}}$ and $J^{(3)}=\frac{\mathfrak{K}_3}{\sqrt{2}}$ matches consistently with the correspondence between $J^{(0)}_{23}=\frac{P_0}{\sqrt{2}}$ and $J^{(3)}=\frac{P_3}{\sqrt{2}}$ but also the correspondence between $J^{(0)}_{12}=-D$ and $J^{(3)}_{12}=K^3=-K_3$ provides the consistent characteristics of the physical length contraction and time dilation physical phenomena realized by the dilation of space and time. 
 We may summarize these characteristic correspondence between $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$ with the explicit representations of $J^{(0)}_{pq}$ and $J^{(3)}_{pq}$ as $3\times3$ matrices given by 
 \begin{align}
   J^{(0)}_{p q}=
@@ -613,8 +620,9 @@ which yields
     \frac{\mathfrak{K}_{\hat{\pm}}}{\sqrt{2}}&\frac{-P_{\hat{\pm}}}{\sqrt{2}}&0  
   \end{pmatrix}_{3\times3},
 \end{align}
-where, $P_{\hat{+}}=P_0\cos{\delta}+P_3\sin{\delta}$, $P_{\hat{-}}=P_0\sin{\delta}-P_3\cos{\delta}$, $\mathfrak{K}_{\hat{+}}=\mathfrak{K}_0\cos{\delta}-\mathfrak{K}_3\sin{\delta}$,  $\mathfrak{K}_{\hat{-}}=\mathfrak{K}_0\sin{\delta}+\mathfrak{K}_3\cos{\delta}$, $D_{\hat{+}}=D\cos\delta+K_{3}\sin\delta$, and $D_{\hat{-}}=D\sin\delta-K_{3}\cos\delta$.
-Then the $(1+1)$ conformal algebra in the interpolation between IFD and LFD reads,
+where, $P_{\hat{+}}=P_0\cos{\delta}+P_3\sin{\delta}$, $P_{\hat{-}}=P_0\sin{\delta}-P_3\cos{\delta}$, $\mathfrak{K}_{\hat{+}}=\mathfrak{K}_0\cos{\delta}-\mathfrak{K}_3\sin{\delta}$,  $\mathfrak{K}_{\hat{-}}=\mathfrak{K}_0\sin{\delta}+\mathfrak{K}_3\cos{\delta}$, $D_{\hat{+}}=D\cos\delta+K_{3}\sin\delta$, and $D_{\hat{-}}=D\sin\delta-K_{3}\cos\delta$. 
+
+In the IFD limit $\delta\rightarrow0$ (or $\mathbb{S}\rightarrow0$ \& $\mathbb{C}\rightarrow1$), we have $P_{\hat{+}}\rightarrow P_{0}$, $P_{\hat{-}}\rightarrow -P_{3}$, $\mathfrak{K}_{\hat{+}}\rightarrow \mathfrak{K}_{0}$, $\mathfrak{K}_{\hat{-}}\rightarrow \mathfrak{K}_{3}$, $D_{\hat{+}}\rightarrow D$, and $D_{\hat{-}}\rightarrow -K_{3}$. Likewise, in the LFD limit $\delta\rightarrow\frac{\pi}{4}$ (or $\mathbb{S}\rightarrow1$ \& $\mathbb{C}\rightarrow0$), we have $P_{\hat{\pm}}\rightarrow P_{\pm}=\frac{P_0\pm P_3}{\sqrt{2}}$, $\mathfrak{K}_{\hat{\pm}}\rightarrow \mathfrak{K}_{\pm}=\frac{\mathfrak{K}_0\mp \mathfrak{K}_3}{\sqrt{2}}$, and $D_{\hat{\pm}}\rightarrow D_{\pm}=\frac{D \pm K_3}{\sqrt{2}}$. Then the $(1+1)$ conformal algebra in the interpolation between IFD and LFD reads,
 \begin{widetext}
 \begin{center}
 \begin{align}
@@ -697,6 +705,8 @@ We find that $SO(2,1+1)$ splits into a direct sum of two identical algebras:
 \end{align}
 which is equivalent to Witt algebra in Minkowski space, as we discuss in the next section.
 
+\begin{comment}
+    
     \begin{center}
         \begin{table*}[t]
   \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
@@ -706,15 +716,17 @@ which is equivalent to Witt algebra in Minkowski space, as we discuss in the nex
 	 %\hline
 	Interpolation angle & Kinematic & Dynamic \\
 	\hline
-	\rule{0pt}{3ex} $\delta=0$ & $P^{3}$, $D$ & $ K^{3}$, $P^{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
-	$0\leq\delta<\pi/4$ &  $P_{\mT}$, $\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$ &  $\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$,  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
-	$\delta=\pi/4$ & $P_{-}$, $D_{+}$, $D_{-}$, $\mathfrak{K}_{{+}}$& $P_{+}$, $\mathfrak{K}_{{-}}$\\
+	\rule{0pt}{3ex} $\delta=0$ & $P_{3}$, $D$ & $ K_{3}$, $P_{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
+	$0<\delta<\pi/4$ &  $P_{\mT}$, $D=\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$ &  $K_3=\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$,  $P_{\pT}$, $\mathfrak{K}_{\hat{+}}$, $\mathfrak{K}_{\hat{-}}$\\
+	$\delta=\pi/4$ & $P_{-}$, $D_{+}=\frac{(D+K_3)}{\sqrt{2}} $, $D_{-}=\frac{(D-K_3)}{\sqrt{2}}$, $\mathfrak{K}_{{-}}$& $P_{+}$, $\mathfrak{K}_{{+}}$\\
 	%\hline
 	 %\hline
       \end{tabular}
     \end{ruledtabular}
 \end{table*}
     \end{center}
+
+\end{comment}
     
 \section{Interpolating  Witt-type algebra}
 \label{sec_Witt-type}
@@ -783,6 +795,380 @@ which reproduces the full commutation table mentioned in Table~\ref {tabelinterp
     SO(2,1+1)\simeq SO(2,1)\oplus SO(2,1).
 \end{align}
 
+\begin{comment}
+\section{$4\times4$ projective space-time representations}
+\label{sec:projectivespace}
+The projective space-time representations in instant form dynamics were discussed in Ref.\cite{Wheeler2009}. To find the $4\times4$ projective space-time representations in the interpolation, it is convenient to start with Eq.\eqref{Jab} and the interpolation is done by a transformation matrix ($4\times4$), which is given by,
+\begin{align}
+    (\mathcal{R}_{\hat{a}}^{b})_{4\times4}=(\mathcal{R}_{\hat{a}}^{b})^T_{4\times4}=\begin{pmatrix}
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&\cos{\delta}&\sin{\delta}\\
+    0&0&\sin{\delta}&-\cos{\delta}
+    \end{pmatrix}_{4\times4}
+\end{align}
+Then in interpolation form $J_{\hat{a}\hat{b}}$ becomes $J_{\hat{a}\hat{b}}=\mathcal{R}_{\hat{a}}^{~{c}}J_{cd}\mathcal{R}_{~\hat{b}}^{{d}}$, that is
+\begin{align}
+    J_{\hat{a}\hat{b}}&=\begin{pmatrix}
+    0&-D&-\frac{\Bar{\mathfrak{K}}_{\hat{+}}}{\sqrt{2}}&-\frac{\Bar{\mathfrak{K}}_{\hat{-}}}{\sqrt{2}}\\
+    D&0&\frac{P_{\hat{+}}}{\sqrt{2}}&\frac{P_{\hat{-}}}{\sqrt{2}}\\
+    \frac{\Bar{\mathfrak{K}}_{\hat{+}}}{\sqrt{2}}&-\frac{P_{\hat{+}}}{\sqrt{2}}&0  & -{K}_{3}\\
+    \frac{\Bar{\mathfrak{K}}_{\hat{-}}}{\sqrt{2}}&-\frac{P_{\hat{-}}}{\sqrt{2}}&{K}_{3}  & 0
+  \end{pmatrix}_{4\times4}\label{Jhat+hat-},
+\end{align}
+where, $P_{\hat{+}}=P_0\cos{\delta}+P_3\sin{\delta}$, $P_{\hat{-}}=P_0\sin{\delta}-P_3\cos{\delta}$, $
+\Bar{\mathfrak{K}}_{\hat{+}}=\mathfrak{K}_0\cos{\delta}+\mathfrak{K}_3\sin{\delta}$, $\Bar{\mathfrak{K}}_{\hat{-}}=\mathfrak{K}_0\sin{\delta}-\mathfrak{K}_3\cos{\delta}$, $D_{\hat{+}}=D\cos\delta+K_{3}\sin\delta$, $D_{\hat{-}}=D\sin\delta-K_{3}\cos\delta$, and the perpendicular components remain the same. Note that our choice of convention for $\Bar{\mathfrak{K}}_{\hat{\pm}}$ are different from $\mathfrak{K}_{\hat{\pm}}$ mentioned in section \ref{sec:conformal}, but the definitions are related as,
+\begin{align}
+    \begin{pmatrix}
+        \Bar{\mathfrak{K}}_{\hat{+}}\\
+        \Bar{\mathfrak{K}}_{\hat{-}}
+    \end{pmatrix}=&\begin{pmatrix}
+        \mathbb{C}&\mathbb{S}\\
+        \mathbb{S}&-\mathbb{C}
+    \end{pmatrix}\begin{pmatrix}
+        \mathfrak{K}_{\hat{+}}\\
+        \mathfrak{K}_{\hat{-}}
+    \end{pmatrix}.
+\end{align}
+In other words, bar notation ($\Bar{\mathfrak{K}}_{\hat{\pm}}$) is an interpolating superscript ($\mathfrak{K}^{\hat{\pm}}$), i.e., $\Bar{\mathfrak{K}}_{\hat{\pm}}=\mathfrak{K}^{\hat{\pm}}=g^{\hat{\pm}\hat{\pm}}\mathfrak{K}_{\hat{\pm}}+g^{\hat{\pm}\hat{\mp}}\mathfrak{K}_{\hat{\mp}}$.
+
+
+In the IFD limit $\delta\rightarrow0$ (or $\mathbb{S}\rightarrow0$ \& $\mathbb{C}\rightarrow1$), we have $P_{\hat{+}}\rightarrow P_{0}$, $P_{\hat{-}}\rightarrow -P_{3}$, $\Bar{\mathfrak{K}}_{\hat{+}}\rightarrow \mathfrak{K}_{0}$, $\Bar{\mathfrak{K}}_{\hat{-}}\rightarrow -\mathfrak{K}_{3}$, $D_{\hat{+}}\rightarrow D$, and $D_{\hat{-}}\rightarrow -K_{3}$. Likewise, in the LFD limit $\delta\rightarrow\frac{\pi}{4}$ (or $\mathbb{S}\rightarrow1$ \& $\mathbb{C}\rightarrow0$), we have $P_{\hat{\pm}}\rightarrow P_{\pm}=\frac{P_0\pm P_3}{\sqrt{2}}$, $\Bar{\mathfrak{K}}_{\hat{\pm}}\rightarrow \mathfrak{K}_{\mp}=\frac{\mathfrak{K}_0\pm \mathfrak{K}_3}{\sqrt{2}}$, and $D_{\hat{\pm}}\rightarrow D_{\pm}=\frac{D \pm K_3}{\sqrt{2}}$. Then the simplified conformal algebra in projective space-time interpolation is:
+  \begin{align}
+      \left[J_{{\hat{a}}{\hat{b}}}J_{{\hat{c}}{\hat{d}}}\right]=-i\left(g_{{\hat{b}}{\hat{d}}}J_{{\hat{a}}{\hat{c}}}-g_{{\hat{b}}{\hat{c}}}J_{{\hat{a}}{\hat{d}}}+g_{{\hat{a}}{\hat{c}}}J_{{\hat{b}}{\hat{d}}}-g_{{\hat{a}}{\hat{d}}}J_{{\hat{b}}{\hat{c}}}\right)\label{simplesrint}
+  \end{align}
+where, 
+\begin{align}
+    g_{\hat{a},\hat{b}}&=\begin{pmatrix}
+  0&-1&0&0\\
+  -1&0&0&0\\
+  0&0&\mathbb{C}&\mathbb{S}\\
+  0&0&\mathbb{S}&-\mathbb{C}\\
+  \end{pmatrix}_{4\times4}\label{metricghat}
+\end{align}
+The algebra Eq.\eqref{simplesrint} with the above interpolating $4\times4$ metric will reproduce 15 explicit commutation relations in interpolation between IFD, and LFD mentioned in Table~\ref {tabel1+1interpolationlfd}.
+
+The conformal algebra Eq.\eqref{Jhat+hat-} in interpolation form in projective-space-time implies that $J_{\hat{a}\hat{b}}$ can be written as
+\begin{align}
+    J_{\hat{a}\hat{b}}=i(X_{\hat{a}}\partial_{\hat{b}}-X_{\hat{b}}\partial_{\hat{a}})
+\end{align}
+where $\hat{a},\hat{b}\in\{-2,-1,\hat{+},\hat{-}\}$, $X_{\hat{a}}$ is the four-dimensional projective-space-time and $\partial_{\hat{a}}\equiv\frac{\partial}{\partial X^{\hat{a}}}$. With the condition that the light cone is preserved in the four-dimensional projective-space-time under the transformations generated by $ J_{\hat{a}\hat{b}}$, we write the infinitesimal conformal transformations in four-dimensional projective-space-time as
+\begin{align}
+    R^{\hat{a}}_{~\hat{b}}=g^{\hat{a}}_{~\hat{b}}-\frac{i}{2}\omega^{\hat{c}\hat{d}}(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}},
+\end{align}
+where $\omega^{\hat{a}\hat{b}}=-\omega^{\hat{b}\hat{a}}$. The generator representation $(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}$ can be obtained by
+\begin{align}
+    (J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}=(J_{\hat{c}\hat{d}})^{\hat{a}\hat{f}}g_{\hat{f}\hat{b}}
+\end{align}
+where, $(J_{{\hat{c}}{\hat{d}}})^{{\hat{a}}{\hat{b}}}=g_{\hat{c}}^{\hat{a}} g_{\hat{d}}^{\hat{b}}-g_{\hat{c}}^{\hat{b}} g_{\hat{d}}^{\hat{a}}$. The representation matrices of conformal generators are defined by taking the first  index to be a superscript and the second subscript:
+\begin{align}
+    &\frac{-\Bar{\mathfrak{K}}_{\hat{\mu}}}{\sqrt{2}}\equiv (J_{\hat{-2}\hat{\mu}})^{\hat{a}}_{~\hat{b}}~;~~\frac{P_{\hat{\mu}}}{\sqrt{2}}\equiv (J_{\hat{-1}\hat{\mu}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
+    &D_{\hat{+}}\equiv -\cos{\delta}(J_{\hat{-2}\hat{-1}})^{\hat{a}}_{~\hat{b}}-\sin{\delta}(J_{\hat{+},\hat{-}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
+    &D_{\hat{-}}\equiv -\sin{\delta}(J_{\hat{-2}\hat{-1}})^{\hat{a}}_{~\hat{b}}+\cos{\delta}(J_{\hat{+},\hat{-}})^{\hat{a}}_{~\hat{b}}~.\label{implicit6x6}
+\end{align}
+The explicit $4\times4$ matrix representation is given in Appendix \ref{4x4}. On complex exponentiating these generators $e^{-\frac{i}{2}\omega^{\hat{c}\hat{d}}(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}}$ then acting on $X_{\hat{a}}$, we get transformed four-dimensional projective-space-time $X^{\prime}_{\hat{a}}$. To obtain the corresponding transformations of four-dimensional space-time, we define the conformal transformations in interpolation as those transformations that preserve the light cone. This is equivalent to preserving angles, and also equivalent to preserving ratios of lengths. Let's consider a projective four-dimensional vector,
+\begin{align}
+    {X}_{\hat{-1}}&=\frac{-\lambda}{\sqrt{2}};\\
+    {X}_{\hat{-2}}&=\frac{-\lambda}{\sqrt{2}}(x^{\hat{\mu}}.x_{\hat{\mu}});\\
+     {X}_{\hat{\mu}}&=\lambda x_{\hat{\mu}},
+\end{align}
+which satisfies ${X}_{\hat{a}}.{X}^{\hat{a}}=0$, the dictionary connecting four-dimensional projective-space-time $X_{\hat{a}}$ and four dimensional space-time $X_{\hat{\mu}}$ reads,
+\begin{align}
+    x_{\hat{\mu}}&=-\frac{1}{\sqrt{2}}\frac{{X}_{\hat{\mu}}}{ {X}_{\hat{-1}}}
+\end{align}
+and the inverse defined as $\frac{x_{\hat{\mu}}}{x^2}=-\frac{1}{\sqrt{2}}\frac{{X}_{\hat{\mu}}}{{X}_{\hat{-2}}}$, with $x^2=\frac{{X}_{\hat{-2}}}{{X}_{\hat{-1}}}$. To find kinematic and dynamic generators of conformal transformations in the interpolation form, we calculate the transformations of the interpolating time $x^{\hat{+}\prime}$ in the Table.~\ref{tablexprime}
+\begin{widetext}
+\begin{center}
+\begin{table}[h!]
+        \centering
+        \scalebox{1}{ 
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{\hat{+}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\Bar{\mathfrak{K}}_{\hat{+}}$ & $x^{\hat{+}\prime}=\frac{x^{\hat{+}}-b^{\hat{+}}(x)^2}{1-2\mathbb{C}b^{\hat{+}}x^{\hat{+}}-2\mathbb{S}b^{\hat{+}}x^{\hat{-}}+\mathbb{C}(b^{\hat{+}})^2(x)^2}$\\
+             \hline
+            \rule{0pt}{16pt} $\Bar{\mathfrak{K}}_{\hat{-}}$ & $x^{\hat{+}\prime}=\frac{x^{\hat{+}}}{1+2\mathbb{C}b^{\hat{-}}x^{\hat{-}}-2\mathbb{S}b^{\hat{-}}x^{\hat{+}}-\mathbb{C}(b^{\hat{-}})^2(x)^2}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{\hat{+}}$& $x^{\hat{+}\prime}=x^{\hat{+}}+c^{\hat{+}} $\\
+             \hline
+             \rule{0pt}{16pt} $P_{\hat{-}}$& $x^{\hat{+}\prime}=x^{\hat{+}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D_{\hat{+}}$ & $x^{\hat{+}\prime} = e^{-\alpha\sin{(\delta)}}\left[\left(\cosh[\alpha\cos{(\delta)}]-\mathbb{S}\sinh[\alpha\cos{(\delta)}]\right)x^{\hat{+}}+\mathbb{C}\sinh[\alpha\cos{(\delta)}] x^{\hat{-}}\right]$ \\
+             \hline
+             \rule{0pt}{16pt} $D_{\hat{-}}$ & $x^{\hat{+}\prime} = e^{-\alpha\cos{(\delta)}}\left[\left(\cosh[\alpha\sin{(\delta)}]+\mathbb{S} \sinh[\alpha\sin{(\delta)}]\right)x^{\hat{+}} -\mathbb{C} \sinh[\alpha\sin{(\delta)}]x^{\hat{-}}\right]$ \\
+             \hline
+        \end{tabular}}
+        \caption{Transformation of interpolating time under each conformal generator in $1+1$}
+        \label{tablexprime}
+    \end{table}
+    \end{center}
+
+    \begin{center}
+        \begin{table*}[t]
+  \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
+    \begin{ruledtabular}
+       \begin{tabular}{lcc}
+	%\hline
+	 %\hline
+	Interpolation angle & Kinematic & Dynamic \\
+	\hline
+	\rule{0pt}{3ex} $\delta=0$ & $P_{3}$, $D$ & $ K_{3}$, $P_{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
+	$0<\delta<\pi/4$ &  $P_{\mT}$, $D=\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$ &  $K_3=\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$,  $P_{\pT}$, $\Bar{\mathfrak{K}}_{\hat{+}}$, $\Bar{\mathfrak{K}}_{\hat{-}}$\\
+	$\delta=\pi/4$ & $P_{-}$, $D_{+}=\frac{(D+K_3)}{\sqrt{2}} $, $D_{-}=\frac{(D-K_3)}{\sqrt{2}}$, $\mathfrak{K}_{{-}}$& $P_{+}$, $\mathfrak{K}_{{+}}$\\
+	%\hline
+	 %\hline
+      \end{tabular}
+    \end{ruledtabular}
+\end{table*}
+    \end{center}
+\end{widetext}
+
+\begin{widetext}
+\begin{center}
+\begin{table}[!htb]
+        \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{{0}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{0}}$ & $x^{{0}\prime}=\frac{x^{{0}}-b^{{0}}(x)^2}{1-2b^{{0}}x^{{0}}+(b^{{0}})^2(x)^2}$\\
+             \hline
+            \rule{0pt}{16pt} $-\mathfrak{K}_{{3}}$ & $x^{{0}\prime}=\frac{x^{{0}}}{1+2b^{{3}}x^{{3}}+(b^{{3}})^2(x)^2}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{{0}}$& $x^{{0}\prime}=x^{{0}}+c^{{0}} $\\
+             \hline
+             \rule{0pt}{16pt} $-P_{{3}}$& $x^{{0}\prime}=x^{{0}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D$ & $x^{{0}\prime} = e^{-\alpha}x^{0}$ \\
+             \hline
+             \rule{0pt}{16pt} $-K_{3}$ & $x^{{0}\prime} = \cosh[\alpha]x^{0}-\sinh[\alpha] x^{3}$ \\
+             \hline
+        \end{tabular}
+        \caption{Transformation of instant form time in $1+1$}
+        \label{tablex0prime}
+        \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{{+}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{-}}$ & $x^{{+}\prime}=x^{+}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{+}}$ & $x^{{+}\prime}=\frac{x^{{+}}}{1-2b^{{-}}x^{{+}}}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{{+}}$& $x^{{+}\prime}=x^{{+}}+c^{{+}} $\\
+             \hline
+             \rule{0pt}{16pt} $P_{{-}}$& $x^{{+}\prime}=x^{{+}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D_{{+}}$ & $x^{{+}\prime} = e^{-\sqrt{2}\alpha}x^{{+}}$ \\
+             \hline
+             \rule{0pt}{16pt} $D_{{-}}$ & $x^{{+}\prime} = x^{{+}}$ \\
+             \hline
+        \end{tabular}
+        \caption{Transformation of light-front time in $1+1$}
+        \label{tablexplusprime}
+          \end{minipage} 
+    \end{table}
+    \end{center}
+\end{widetext}
+
+
+The Table.~\ref{tablexprime} shows the transformations of the interpolating time $x^{\hat{+}\prime}$. The IFD limit $\mathbb{C}=1;~\mathbb{S}=0$ is given the Table.~\ref{tablex0prime} and the LFD limit $\mathbb{C}=0;~\mathbb{S}=1$ is given the Table.~\ref{tablexplusprime}
+
+%We note that The transformations further simplifies for $\mathfrak{K}_{\pm}$ in LFD limit, $x^{+}$ transforms as $ x^{+\prime} =x^{+}$ under $\mathfrak{K}^{-}$.
+
+Among the six conformal generators, the two generators ($P_{\mT}, D$) are always kinematic in the sense that the $x^{\pT}=0$ plane is intact under the transformations generated by them. Though dilation $D$ is always kinematic, but it's combination with $K_3$ which is $D_{\hat{\pm}}$ is is dynamic in between IFD and LFD, in IFD limit $D_{\hat{+}}$ is kinematic, $D_{\hat{-}}$ is dynamic, in LFD limit $D_{\hat{\pm}}$ is kinematic. The transformations further simplifies for $\mathfrak{K}_{\pm}$ in LFD limit, $x^{+}$ transforms as $ x^{+\prime} =x^{+}$ under $\mathfrak{K}_{-}$. We get one more kinematic generator in $(1+1)$. The set of kinematic and dynamic conformal generators in (1+1) depending on the interpolation angle is summarized in Table~\ref {tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}. 
+
+Dirac\cite{Dirac1936} has shown the existence of an isomorphism between the $SO(3+1,2)$ conformal group and Dirac matrices. Later, Hepner\cite{Hepner1962} has explicitly indicated the isomorphism between the group of Dirac's four-row $\gamma$-matrices and the continuous conformal group in Euclidean space. Our future will extend the isomorphism between the conformal group Eq.\eqref{Jhat+hat-} and the group of fifteen matrices of the $\gamma$'s and their products in the interpolation projective-space-time
+
+\end{comment}
+
+\section{$4\times4$ projective space-time representations}
+\label{sec:projectivespace}
+The projective space-time representations in instant form dynamics were discussed in Ref.\cite{Wheeler2009}. To find the $4\times4$ projective space-time representations in the interpolation, it is convenient to start with Eq.\eqref{Jab} and the interpolation is done by a transformation matrix ($4\times4$), which is given by,
+\begin{align}
+    (\mathcal{R}_{\hat{a}}^{b})_{4\times4}=(\mathcal{R}_{\hat{a}}^{b})^T_{4\times4}=\begin{pmatrix}
+    1&0&0&0\\
+    0&1&0&0\\
+    0&0&\cos{\delta}&\sin{\delta}\\
+    0&0&\sin{\delta}&-\cos{\delta}
+    \end{pmatrix}_{4\times4}
+\end{align}
+Then in interpolation form $J_{\hat{a}\hat{b}}$ becomes $J_{\hat{a}\hat{b}}=\mathcal{R}_{\hat{a}}^{~{c}}J_{cd}\mathcal{R}_{~\hat{b}}^{{d}}$, that is
+\begin{align}
+    J_{\hat{a}\hat{b}}&=\begin{pmatrix}
+    0&-D&-\frac{\mathfrak{K}^{\hat{+}}}{\sqrt{2}}&-\frac{\mathfrak{K}^{\hat{-}}}{\sqrt{2}}\\
+    D&0&\frac{P_{\hat{+}}}{\sqrt{2}}&\frac{P_{\hat{-}}}{\sqrt{2}}\\
+    \frac{\mathfrak{K}^{\hat{+}}}{\sqrt{2}}&-\frac{P_{\hat{+}}}{\sqrt{2}}&0  & -{K}_{3}\\
+    \frac{\mathfrak{K}^{\hat{-}}}{\sqrt{2}}&-\frac{P_{\hat{-}}}{\sqrt{2}}&{K}_{3}  & 0
+  \end{pmatrix}_{4\times4}\label{Jhat+hat-},
+\end{align}
+where, $P_{\hat{+}}=P_0\cos{\delta}+P_3\sin{\delta}$, $P_{\hat{-}}=P_0\sin{\delta}-P_3\cos{\delta}$, $
+\mathfrak{K}^{\hat{+}}=\mathfrak{K}_0\cos{\delta}+\mathfrak{K}_3\sin{\delta}$, $\mathfrak{K}^{\hat{-}}=\mathfrak{K}_0\sin{\delta}-\mathfrak{K}_3\cos{\delta}$, $D_{\hat{+}}=D\cos\delta+K_{3}\sin\delta$, $D_{\hat{-}}=D\sin\delta-K_{3}\cos\delta$, and the perpendicular components remain the same.
+
+The interpolation in projective space-time naturally produces superscript special conformal generators  ($\mathfrak{K}^{\hat{\pm}}$), which are related to subscript special conformal generators as $\mathfrak{K}^{\hat{\pm}}=g^{\hat{\pm}\hat{\pm}}\mathfrak{K}_{\hat{\pm}}+g^{\hat{\pm}\hat{\mp}}\mathfrak{K}_{\hat{\mp}}$, where the metric is defined in Eq.\eqref{eqn:g_munu_interpolation}, explicitly,
+\begin{align}
+    \begin{pmatrix}
+        \mathfrak{K}^{\hat{+}}\\
+        \mathfrak{K}^{\hat{-}}
+    \end{pmatrix}=&\begin{pmatrix}
+        \mathbb{C}&\mathbb{S}\\
+        \mathbb{S}&-\mathbb{C}
+    \end{pmatrix}\begin{pmatrix}
+        \mathfrak{K}_{\hat{+}}\\
+        \mathfrak{K}_{\hat{-}}
+    \end{pmatrix}.
+\end{align}
+
+In the IFD limit $\delta\rightarrow0$ (or $\mathbb{S}\rightarrow0$ \& $\mathbb{C}\rightarrow1$), we have $P_{\hat{+}}\rightarrow P_{0}$, $P_{\hat{-}}\rightarrow -P_{3}$, $\mathfrak{K}^{\hat{+}}\rightarrow \mathfrak{K}_{0}$, $\mathfrak{K}^{\hat{-}}\rightarrow -\mathfrak{K}_{3}$, $D_{\hat{+}}\rightarrow D$, and $D_{\hat{-}}\rightarrow -K_{3}$. Likewise, in the LFD limit $\delta\rightarrow\frac{\pi}{4}$ (or $\mathbb{S}\rightarrow1$ \& $\mathbb{C}\rightarrow0$), we have $P_{\hat{\pm}}\rightarrow P_{\pm}=\frac{P_0\pm P_3}{\sqrt{2}}$, $\mathfrak{K}^{\hat{\pm}}\rightarrow \mathfrak{K}_{\mp}=\frac{\mathfrak{K}_0\pm \mathfrak{K}_3}{\sqrt{2}}$, and $D_{\hat{\pm}}\rightarrow D_{\pm}=\frac{D \pm K_3}{\sqrt{2}}$. Then the simplified conformal algebra in projective space-time interpolation is:
+  \begin{align}
+      \left[J_{{\hat{a}}{\hat{b}}}J_{{\hat{c}}{\hat{d}}}\right]=-i\left(g_{{\hat{b}}{\hat{d}}}J_{{\hat{a}}{\hat{c}}}-g_{{\hat{b}}{\hat{c}}}J_{{\hat{a}}{\hat{d}}}+g_{{\hat{a}}{\hat{c}}}J_{{\hat{b}}{\hat{d}}}-g_{{\hat{a}}{\hat{d}}}J_{{\hat{b}}{\hat{c}}}\right)\label{simplesrint}
+  \end{align}
+where, 
+\begin{align}
+    g_{\hat{a}\hat{b}}&=\begin{pmatrix}
+  0&-1&0&0\\
+  -1&0&0&0\\
+  0&0&\mathbb{C}&\mathbb{S}\\
+  0&0&\mathbb{S}&-\mathbb{C}\\
+  \end{pmatrix}_{4\times4}\label{metricghat}
+\end{align}
+The algebra Eq.\eqref{simplesrint} with the above interpolating $4\times4$ metric will reproduce 15 explicit commutation relations in interpolation between IFD, and LFD mentioned in Table~\ref {tabel1+1interpolationlfd}.
+
+The conformal algebra Eq.\eqref{Jhat+hat-} in interpolation form in projective-space-time implies that $J_{\hat{a}\hat{b}}$ can be written as
+\begin{align}
+    J_{\hat{a}\hat{b}}=i(X_{\hat{a}}\partial_{\hat{b}}-X_{\hat{b}}\partial_{\hat{a}})
+\end{align}
+where $\hat{a},\hat{b}\in\{-2,-1,\hat{+},\hat{-}\}$, $X_{\hat{a}}$ is the four-dimensional projective-space-time and $\partial_{\hat{a}}\equiv\frac{\partial}{\partial X^{\hat{a}}}$. With the condition that the light cone is preserved in the four-dimensional projective-space-time under the transformations generated by $ J_{\hat{a}\hat{b}}$, we write the infinitesimal conformal transformations in four-dimensional projective-space-time as
+\begin{align}
+    R^{\hat{a}}_{~\hat{b}}=g^{\hat{a}}_{~\hat{b}}-\frac{i}{2}\omega^{\hat{c}\hat{d}}(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}},
+\end{align}
+where $\omega^{\hat{a}\hat{b}}=-\omega^{\hat{b}\hat{a}}$. The generator representation $(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}$ can be obtained by
+\begin{align}
+    (J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}=(J_{\hat{c}\hat{d}})^{\hat{a}\hat{f}}g_{\hat{f}\hat{b}}
+\end{align}
+where, $(J_{{\hat{c}}{\hat{d}}})^{{\hat{a}}{\hat{b}}}=g_{\hat{c}}^{\hat{a}} g_{\hat{d}}^{\hat{b}}-g_{\hat{c}}^{\hat{b}} g_{\hat{d}}^{\hat{a}}$. The representation matrices of conformal generators are defined by taking the first  index to be a superscript and the second subscript:
+\begin{align}
+    &\frac{-\mathfrak{K}^{\hat{\mu}}}{\sqrt{2}}\equiv (J_{\hat{-2}\hat{\mu}})^{\hat{a}}_{~\hat{b}}~;~~\frac{P_{\hat{\mu}}}{\sqrt{2}}\equiv (J_{\hat{-1}\hat{\mu}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
+    &D_{\hat{+}}\equiv -\cos{\delta}(J_{\hat{-2}\hat{-1}})^{\hat{a}}_{~\hat{b}}-\sin{\delta}(J_{\hat{+},\hat{-}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
+    &D_{\hat{-}}\equiv -\sin{\delta}(J_{\hat{-2}\hat{-1}})^{\hat{a}}_{~\hat{b}}+\cos{\delta}(J_{\hat{+},\hat{-}})^{\hat{a}}_{~\hat{b}}~.\label{implicit6x6}
+\end{align}
+The explicit $4\times4$ matrix representation is given in Appendix \ref{4x4}. On complex exponentiating these generators $e^{-\frac{i}{2}\omega^{\hat{c}\hat{d}}(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}}$ then acting on $X_{\hat{a}}$, we get transformed four-dimensional projective-space-time $X^{\prime}_{\hat{a}}$. To obtain the corresponding transformations of four-dimensional space-time, we define the conformal transformations in interpolation as those transformations that preserve the light cone. This is equivalent to preserving angles, and also equivalent to preserving ratios of lengths. Let's consider a projective four-dimensional vector,
+\begin{align}
+    {X}_{\hat{-1}}&=\frac{-\lambda}{\sqrt{2}};\\
+    {X}_{\hat{-2}}&=\frac{-\lambda}{\sqrt{2}}(x^{\hat{\mu}}.x_{\hat{\mu}});\\
+     {X}_{\hat{\mu}}&=\lambda x_{\hat{\mu}},
+\end{align}
+which satisfies ${X}_{\hat{a}}.{X}^{\hat{a}}=0$, the dictionary connecting four-dimensional projective-space-time $X_{\hat{a}}$ and four dimensional space-time $X_{\hat{\mu}}$ reads,
+\begin{align}
+    x_{\hat{\mu}}&=-\frac{1}{\sqrt{2}}\frac{{X}_{\hat{\mu}}}{ {X}_{\hat{-1}}}
+\end{align}
+and the inverse defined as $\frac{x_{\hat{\mu}}}{x^2}=-\frac{1}{\sqrt{2}}\frac{{X}_{\hat{\mu}}}{{X}_{\hat{-2}}}$, with $x^2=\frac{{X}_{\hat{-2}}}{{X}_{\hat{-1}}}$. To find kinematic and dynamic generators of conformal transformations in the interpolation form, we calculate the transformations of the interpolating time $x^{\hat{+}\prime}$ in the Table.~\ref{tablexprime}
+\begin{widetext}
+\begin{center}
+\begin{table}[h!]
+        \centering
+        \scalebox{1}{ 
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{\hat{+}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}^{\hat{+}}$ & $x^{\hat{+}\prime}=\frac{x^{\hat{+}}-b^{\hat{+}}(x)^2}{1-2\mathbb{C}b^{\hat{+}}x^{\hat{+}}-2\mathbb{S}b^{\hat{+}}x^{\hat{-}}+\mathbb{C}(b^{\hat{+}})^2(x)^2}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}^{\hat{-}}$ & $x^{\hat{+}\prime}=\frac{x^{\hat{+}}}{1+2\mathbb{C}b^{\hat{-}}x^{\hat{-}}-2\mathbb{S}b^{\hat{-}}x^{\hat{+}}-\mathbb{C}(b^{\hat{-}})^2(x)^2}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{\hat{+}}$& $x^{\hat{+}\prime}=x^{\hat{+}}+c^{\hat{+}} $\\
+             \hline
+             \rule{0pt}{16pt} $P_{\hat{-}}$& $x^{\hat{+}\prime}=x^{\hat{+}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D_{\hat{+}}$ & $x^{\hat{+}\prime} = e^{-\alpha\sin{(\delta)}}\left[\left(\cosh[\alpha\cos{(\delta)}]-\mathbb{S}\sinh[\alpha\cos{(\delta)}]\right)x^{\hat{+}}+\mathbb{C}\sinh[\alpha\cos{(\delta)}] x^{\hat{-}}\right]$ \\
+             \hline
+             \rule{0pt}{16pt} $D_{\hat{-}}$ & $x^{\hat{+}\prime} = e^{-\alpha\cos{(\delta)}}\left[\left(\cosh[\alpha\sin{(\delta)}]+\mathbb{S} \sinh[\alpha\sin{(\delta)}]\right)x^{\hat{+}} -\mathbb{C} \sinh[\alpha\sin{(\delta)}]x^{\hat{-}}\right]$ \\
+             \hline
+        \end{tabular}}
+        \caption{Transformation of interpolating time under each conformal generator in $1+1$}
+        \label{tablexprime}
+    \end{table}
+    \end{center}
+
+    \begin{center}
+        \begin{table*}[t]
+  \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
+    \begin{ruledtabular}
+       \begin{tabular}{lcc}
+	%\hline
+	 %\hline
+	Interpolation angle & Kinematic & Dynamic \\
+	\hline
+	\rule{0pt}{3ex} $\delta=0$ & $P_{3}$, $D$ & $ K_{3}$, $P_{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
+	$0<\delta<\pi/4$ &  $P_{\mT}$, $D=\left(D_{\hat{+}}c+D_{\hat{-}}s\right)$ &  $K_3=\left(D_{\hat{+}}s-D_{\hat{-}}c\right)$,  $P_{\pT}$, $\mathfrak{K}^{\hat{+}}$, $\mathfrak{K}^{\hat{-}}$\\
+	$\delta=\pi/4$ & $P_{-}$, $D_{+}=\frac{(D+K_3)}{\sqrt{2}} $, $D_{-}=\frac{(D-K_3)}{\sqrt{2}}$, $\mathfrak{K}_{{-}}$& $P_{+}$, $\mathfrak{K}_{{+}}$\\
+	%\hline
+	 %\hline
+      \end{tabular}
+    \end{ruledtabular}
+\end{table*}
+    \end{center}
+\end{widetext}
+
+\begin{widetext}
+\begin{center}
+\begin{table}[!htb]
+        \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{{0}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{0}}$ & $x^{{0}\prime}=\frac{x^{{0}}-b^{{0}}(x)^2}{1-2b^{{0}}x^{{0}}+(b^{{0}})^2(x)^2}$\\
+             \hline
+            \rule{0pt}{16pt} $-\mathfrak{K}_{{3}}$ & $x^{{0}\prime}=\frac{x^{{0}}}{1+2b^{{3}}x^{{3}}+(b^{{3}})^2(x)^2}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{{0}}$& $x^{{0}\prime}=x^{{0}}+c^{{0}} $\\
+             \hline
+             \rule{0pt}{16pt} $-P_{{3}}$& $x^{{0}\prime}=x^{{0}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D$ & $x^{{0}\prime} = e^{-\alpha}x^{0}$ \\
+             \hline
+             \rule{0pt}{16pt} $-K_{3}$ & $x^{{0}\prime} = \cosh[\alpha]x^{0}-\sinh[\alpha] x^{3}$ \\
+             \hline
+        \end{tabular}
+        \caption{Transformation of instant form time in $1+1$}
+        \label{tablex0prime}
+        \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+        \begin{tabular}{|c|c|c|}
+        \hline
+             \rule{0pt}{16pt} Generators & $x^{{+}\prime}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{-}}$ & $x^{{+}\prime}=x^{+}$\\
+             \hline
+            \rule{0pt}{16pt} $\mathfrak{K}_{{+}}$ & $x^{{+}\prime}=\frac{x^{{+}}}{1-2b^{{-}}x^{{+}}}$ \\
+             \hline
+             \rule{0pt}{16pt} $P_{{+}}$& $x^{{+}\prime}=x^{{+}}+c^{{+}} $\\
+             \hline
+             \rule{0pt}{16pt} $P_{{-}}$& $x^{{+}\prime}=x^{{+}}$  \\
+             \hline
+             \rule{0pt}{16pt} $D_{{+}}$ & $x^{{+}\prime} = e^{-\sqrt{2}\alpha}x^{{+}}$ \\
+             \hline
+             \rule{0pt}{16pt} $D_{{-}}$ & $x^{{+}\prime} = x^{{+}}$ \\
+             \hline
+        \end{tabular}
+        \caption{Transformation of light-front time in $1+1$}
+        \label{tablexplusprime}
+          \end{minipage} 
+    \end{table}
+    \end{center}
+\end{widetext}
+
+
+The Table.~\ref{tablexprime} shows the transformations of the interpolating time $x^{\hat{+}\prime}$. The IFD limit $\mathbb{C}=1;~\mathbb{S}=0$ is given the Table.~\ref{tablex0prime} and the LFD limit $\mathbb{C}=0;~\mathbb{S}=1$ is given the Table.~\ref{tablexplusprime}
+
+%We note that The transformations further simplifies for $\mathfrak{K}_{\pm}$ in LFD limit, $x^{+}$ transforms as $ x^{+\prime} =x^{+}$ under $\mathfrak{K}^{-}$.
+
+Among the six conformal generators, the two generators ($P_{\mT}, D$) are always kinematic in the sense that the $x^{\pT}=0$ plane is intact under the transformations generated by them. Though dilation $D$ is always kinematic, but it's combination with $K_3$ which is $D_{\hat{\pm}}$ is is dynamic in between IFD and LFD, in IFD limit $D_{\hat{+}}$ is kinematic, $D_{\hat{-}}$ is dynamic, in LFD limit $D_{\hat{\pm}}$ is kinematic. The transformations further simplifies for $\mathfrak{K}_{\pm}$ in LFD limit, $x^{+}$ transforms as $ x^{+\prime} =x^{+}$ under $\mathfrak{K}_{-}$. We get one more kinematic generator in $(1+1)$. The set of kinematic and dynamic conformal generators in (1+1) depending on the interpolation angle is summarized in Table~\ref {tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}. 
+
+For $(3+1)$ conformal group, Dirac\cite{Dirac1936} has shown the existence of an isomorphism between the $SO(3+1,2)$ conformal group and Dirac matrices. Later, Hepner\cite{Hepner1962} has explicitly indicated the isomorphism between the group of Dirac's four-row $\gamma$-matrices and the continuous conformal group in Euclidean space. Our future will extend the isomorphism between the conformal group $(3+1)$ and the group of fifteen matrices of the $\gamma$'s and their products in the interpolation projective-space-time.
 
 
 
@@ -804,6 +1190,7 @@ which reproduces the full commutation table mentioned in Table~\ref {tabelinterp
 }
 
 \acknowledgments
+This work was supported by the US DOE Contract No. DE-FG02-03ER41260.
 
 \appendix
 
@@ -878,6 +1265,54 @@ then
 \begin{align}
     \braket{\Omega_{P_{3}}|\Omega_{D_{3}}} =& \frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\; e^{-\frac{c^2}{4}(1-\tanh\alpha)}~.
 \end{align}
+
+
+\section{4-dimensional matrix representation of the conformal group} 
+\label{4x4}
+The explicit $4\times4$ projective-space-time matrix representations in interpolation form corresponds to Eq.\eqref{implicit6x6} are given below
+\begin{align}
+    \mathfrak{K}^{\hat{+}}&=\sqrt{2}\begin{pmatrix}
+        0&0&0&0\\
+        0&0&i&0\\
+        i\mathbb{C}&0&0&0\\
+        i\mathbb{S}&0&0&0
+    \end{pmatrix};~\mathfrak{K}^{\hat{-}}=\sqrt{2}\begin{pmatrix}
+        0&0&0&0\\
+        0&0&0&i\\
+        i\mathbb{S}&0&0&0\\
+        -i\mathbb{C}&0&0&0
+    \end{pmatrix};\nonumber
+    \end{align}
+    \begin{align}
+     P_{\hat{+}}&=\sqrt{2}\begin{pmatrix}
+        0&0&-i&0\\
+        0&0&0&0\\
+        0&-i\mathbb{C}&0&0\\
+        0&-i\mathbb{S}&0&0
+    \end{pmatrix};~P_{\hat{-}}=\sqrt{2}\begin{pmatrix}
+        0&0&0&-i\\
+        0&0&0&0\\
+        0&-i\mathbb{S}&0&0\\
+        0&i\mathbb{C}&0&0
+    \end{pmatrix};\nonumber
+    \end{align}
+\begin{align}
+    D_{\hat{+}}&=\begin{pmatrix}
+        -i\cos{(\delta)}&0&0&0\\
+        0&i\cos{(\delta)}&0&0\\
+        0&0&i\mathbb{S}\sin{(\delta)}&-i\mathbb{C}\sin{(\delta)}\\
+        0&0&-i\mathbb{C}\sin{(\delta)}&-i\mathbb{S}\sin{(\delta)}
+    \end{pmatrix};\nonumber\\
+    D_{\hat{-}}&=\begin{pmatrix}
+        -i\sin{(\delta)}&0&0&0\\
+        0&i\sin{(\delta)}&0&0\\
+        0&0&-i\mathbb{S}\cos{(\delta)}&i\mathbb{C}\cos{(\delta)}\\
+        0&0&i\mathbb{C}\cos{(\delta)}&i\mathbb{S}\cos{(\delta)}
+    \end{pmatrix}.\\
+    \nonumber
+\end{align}
+
+These explicit projective-space-time matrices satisfy the full conformal algebra Eq.\eqref{simplesrint} in interpolation. 
 
 
 
