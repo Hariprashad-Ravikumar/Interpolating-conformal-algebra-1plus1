@@ -1,23 +1,3 @@
-% ****** Start of file apssamp.tex ******
-%
-%   This file is part of the APS files in the REVTeX 4.2 distribution.
-%   Version 4.2a of REVTeX, December 2014
-%
-%   Copyright (c) 2014 The American Physical Society.
-%
-%   See the REVTeX 4 README file for restrictions and more information.
-%
-% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% as well as the rest of the prerequisites for REVTeX 4.2
-%
-% See the REVTeX 4 README file
-% It also requires running BibTeX. The commands are as follows:
-%
-%  1)  latex apssamp.tex
-%  2)  bibtex apssamp
-%  3)  latex apssamp.tex
-%  4)  latex apssamp.tex
-%
 \documentclass[%
  reprint,
 superscriptaddress,
@@ -83,10 +63,12 @@ superscriptaddress,
 \usepackage{fancyhdr}
 \usepackage{slashed}
 \usepackage{xfrac}
-\usepackage{xcolor}
+%\usepackage{xcolor}
 \usepackage{cases}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \usepackage[pdftex, citecolor=blue, urlcolor=blue, linkcolor=blue, colorlinks=true, bookmarksopen=true]{hyperref}
+%\usepackage{hyperref}
+\hypersetup{colorlinks,allcolors=black}
 % \numberwithin{equation}{section}
 \allowdisplaybreaks  % allow breaks inside aligned equations
 
@@ -116,8 +98,7 @@ superscriptaddress,
 
 \preprint{APS/123-QED}
 
-\title{Interpolating conformal algebra \texorpdfstring{$(1+1)$}{TEXT} dimensions between the instant form
-and the light-front form of relativistic dynamics}
+\title{Interpolating conformal algebra in \texorpdfstring{$(1+1)$}{TEXT} dimensions between the instant form and the light-front form of relativistic dynamics}
 
 \author{Chueng-Ryong Ji}
 \affiliation{Department of Physics, North Carolina State University, Raleigh, North Carolina 27695-8202, USA}
@@ -135,16 +116,14 @@ We present the interpolating conformal algebra between the instant form dynamics
 \maketitle
 
 
-
 \section{Introduction}
 \label{sec:introduction}
 
-In the early 20th century, Cunningham  \cite{Cunningham1910} and Bateman  \cite{Bateman1910} demonstrated that the Maxwell equations are invariant under conformal transformations. Later, P. M. Dirac  \cite{Dirac1936} proved that the massless version of his well-known equation in relativistic quantum mechanics also exhibits invariance under conformal transformations. 
+It is essential to study the conformal symmetry in discussing the fundamental properties of spacetime in analyzing the relativistic quantum field theories~\cite{Wess1960, Kastrup1966, SalamMack1969, Gross1970} as well as developing characteristics of duality as exemplified in AdS/CFT correspondence~\cite {Weinberg_2010, Brodsky_2015, Maldacena2016}. In the early 20th century, Cunningham  \cite{Cunningham1910} and Bateman  \cite{Bateman1910} demonstrated that the Maxwell equations are invariant under conformal transformations. Later, Dirac  \cite{Dirac1936} proved that the massless version of his well-known equation in relativistic quantum mechanics also exhibits invariance under conformal transformations. In the 1960s, Gross \cite{Gross1970} explored the scale invariance as an asymptotic (high-energy) symmetry of scattering amplitudes, demonstrating that the scale invariance of Lagrangian field theories implies conformal invariance. A partial list of literature discussing the physical significance and potential applications of scale and conformal invariance can be found in Refs. \cite{Wess1960, Gürsey1956, Fulton1962, Kastrup1966, SalamMack1969, Wilson1969, Gross1970}. Additionally, a historical review in Ref. \cite{Kastrup2008} provides further early references on this topic. Aspects of the conformal group in two-dimensional Minkowski spacetime, with representations of the algebra and of the group within a field-theoretic Schrodinger representation for bosons and fermions, were reviewed in Ref. \cite{Jackiw1990}.
 
-Conformal field theories require either a continuous or a vanishing mass spectrum. When all relevant energies are very high, it is reasonable to neglect all masses and thus recover scale invariance. For example, in the case of quantum electrodynamics, at very high energies and momentum transfers (compared to the electron mass), the scattering amplitudes should display the characteristics of a scale-invariant theory, as if the electron were massless. 
-
-In the 1960s, Gross \cite{Gross1970} explored this scale invariance as an asymptotic (high-energy) symmetry of scattering amplitudes and also proved that the scale invariance of Lagrangian field theories implies conformal invariance. A list of literature discussing the physical significance and potential applications of scale and conformal invariance can be found in Refs. \cite{Wess1960, Gürsey1956, Fulton1962, Kastrup1966, SalamMack1969, Wilson1969, Gross1970}. Additionally, a historical review in Ref. \cite{Kastrup2008} provides further early references on this topic. Aspects of the conformal group in two-dimensional Minkowski spacetime, with representations of the algebra and of the group within a field-theoretic Schrodinger representation for bosons and fermions, were reviewed in Ref. \cite{Jackiw1990}.
-
+In this work, we start by discussing the conformal symmetry in the lowest dimensions, namely $(0+1)$ and $(1+0)$ dimensions, and then move on to discuss the conformal symmetry in 
+$(1+1)$ dimensions. In particular, we elaborate the $(1+1)$ dimensional conformal algebra with the interpolation between the two different forms of relativistic dynamics, i.e., the instant form dynamics (IFD) and the light-front dynamics (LFD). With this interpolation, we discuss a dramatic difference in the number of kinematic generators that leave the time defined in the given form of the dynamics invariant
+between IFD and LFD. Figuring out which generator is kinematic in what form of dynamics is useful as the more kinematic generators save the correspondingly more dynamic efforts in solving the relativistic quantum field theories, such as QED and QCD~ \cite{ji2023relativistic}.
 
 In general, the conformal transformation $x\longmapsto x'$ in $d$ dimension can be defined as \cite{Francesco,Blumenhagen}, 
 \begin{align}
@@ -166,9 +145,7 @@ where $F(x)=\Lambda(x)-1-\mathcal{O}(\epsilon^2)$. The Eq.\eqref{Killing} is cal
 In finite form, the SCT will be $x'^{\mu }={\frac {x^{\mu }-b^{\mu }x^{2}}{1-2b\cdot x+b^{2}x^{2}}}$, this can be understood as an inversion of $x^\mu$, followed by a translation $b^\mu$, and followed again by an inversion \cite{Blumenhagen}.
 
 In the next section, Sec.~\ref{sec:conformal0110}, we present the one-dimensional conformal algebra and its representation in terms of creation and annihilation operators of a harmonic oscillator. In Sec .~\ref{sec:conformal}, we extend the interpolation method from the Poincar\'e group to the conformal group. We demonstrate that the $SO(2, 1 + 1)$ algebra decomposes into a direct sum of two identical algebras in the light-front limit. The interpolating Witt-type algebra is introduced in Sec.~\ref{sec_Witt-type}. 
-
-
-In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles along with the $4\times4$ matrix representation of all conformal generators. %Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
+In Sec.~\ref{sec:projectivespace}, we show the projective space representation and discuss kinematic and dynamic generators in various interpolation angles, along with the $4\times4$ matrix representation of all conformal generators. %Finally, in Appendix~\ref{4x4}, we present the $4\times4$ matrix representation of all conformal generators. 
 Summary and conclusion follow in the last section, Sec.~\ref{summary-conclusion}. Finally, in Appendix~\ref{Dilated-vacuum},  we present the more detailed derivation discussed in Sec.~\ref{sec:conformal0110} regarding the coherent vacuum ($\ket{\Omega_{D_{3}}}$) associated with the dilation. 
 
 
@@ -620,15 +597,15 @@ where $s=\sin{\delta}$ and $c=\cos{\delta}$. A comprehensive table of the fiftee
  \rule{0pt}{25pt} & $\mathfrak{K}_{\hat{+}}$& $P_{\hat{+}}$& $D_{\hat{+}}$  & $\mathfrak{K}_{\hat{-}}$  &  $P_{\hat{-}}$ & $D_{\hat{-}}$ \\
  \hline
   \hline
- \rule{0pt}{25pt}$\mathfrak{K}_{\hat{+}}$  & \cellcolor{blue!20}$0$ & \cellcolor{blue!20}$-2i[(c+\mathbb{S}s)d_{\hat{+}}+(s-\mathbb{S}c)d_{\hat{-}}]$& \cellcolor{blue!20} $-i[(c+\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s-\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$& \cellcolor{red!20}$0$ & \cellcolor{red!20}$2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$ & \cellcolor{red!20} $i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$\\
+ \rule{0pt}{25pt}$\mathfrak{K}_{\hat{+}}$  & \cellcolor{blue!20}$0$ & \cellcolor{blue!20}$-2i[(c+\mathbb{S}s)D_{\hat{+}}+(s-\mathbb{S}c)D_{\hat{-}}]$& \cellcolor{blue!20} $-i[(c+\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s-\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$& \cellcolor{red!20}$0$ & \cellcolor{red!20}$2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$ & \cellcolor{red!20} $i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$\\
  \hline 
- \rule{0pt}{25pt}  $P_{\hat{+}}$ & \cellcolor{blue!20} $2i[(c+\mathbb{S}s)d_{\hat{+}}+(s-\mathbb{S}c)d_{\hat{-}}]$& \cellcolor{blue!20} $0$& \cellcolor{blue!20} $i[(c+\mathbb{S}s)P_{\hat{+}}+(s-\mathbb{S}c)P_{\hat{-}}]$& \cellcolor{red!20} $-2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20} $0$ & \cellcolor{red!20} $-i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$\\
+ \rule{0pt}{25pt}  $P_{\hat{+}}$ & \cellcolor{blue!20} $2i[(c+\mathbb{S}s)D_{\hat{+}}+(s-\mathbb{S}c)D_{\hat{-}}]$& \cellcolor{blue!20} $0$& \cellcolor{blue!20} $i[(c+\mathbb{S}s)P_{\hat{+}}+(s-\mathbb{S}c)P_{\hat{-}}]$& \cellcolor{red!20} $-2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20} $0$ & \cellcolor{red!20} $-i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$\\
  \hline 
   \rule{0pt}{25pt}$D_{\hat{+}}$  & \cellcolor{blue!20}$i[(c+\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s-\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$ & \cellcolor{blue!20}$-i[(c+\mathbb{S}s)P_{\hat{+}}+(s-\mathbb{S}c)P_{\hat{-}}]$& \cellcolor{blue!20} $0$& \cellcolor{red!20}$-i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$ & \cellcolor{red!20} $i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$& \cellcolor{red!20} $0$\\
  \hline 
- \rule{0pt}{25pt}$\mathfrak{K}_{\hat{-}}$ & \cellcolor{red!20} $0$& \cellcolor{red!20} $2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20}$i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$  & \cellcolor{cyan!20} $0$& \cellcolor{cyan!20}$-2i[(c-\mathbb{S}s)d_{\hat{+}}+(s+\mathbb{S}c)d_{\hat{-}}]$ & \cellcolor{cyan!20} $-i[(c-\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s+\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$\\
+ \rule{0pt}{25pt}$\mathfrak{K}_{\hat{-}}$ & \cellcolor{red!20} $0$& \cellcolor{red!20} $2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20}$i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$  & \cellcolor{cyan!20} $0$& \cellcolor{cyan!20}$-2i[(c-\mathbb{S}s)D_{\hat{+}}+(s+\mathbb{S}c)D_{\hat{-}}]$ & \cellcolor{cyan!20} $-i[(c-\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s+\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$\\
  \hline 
- \rule{0pt}{25pt}$P_{\hat{-}}$  & \cellcolor{red!20} $-2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20}$0$& \cellcolor{red!20}$-i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$ & \cellcolor{cyan!20}$2i[(c-\mathbb{S}s)d_{\hat{+}}+(s+\mathbb{S}c)d_{\hat{-}}]$ & \cellcolor{cyan!20} $0$& \cellcolor{cyan!20} $i[(c-\mathbb{S}s)P_{\hat{+}}+(s+\mathbb{S}c)P_{\hat{-}}]$\\
+ \rule{0pt}{25pt}$P_{\hat{-}}$  & \cellcolor{red!20} $-2i\mathbb{C}[sD_{\hat{+}}-cD_{\hat{-}}]$& \cellcolor{red!20}$0$& \cellcolor{red!20}$-i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$ & \cellcolor{cyan!20}$2i[(c-\mathbb{S}s)D_{\hat{+}}+(s+\mathbb{S}c)D_{\hat{-}}]$ & \cellcolor{cyan!20} $0$& \cellcolor{cyan!20} $i[(c-\mathbb{S}s)P_{\hat{+}}+(s+\mathbb{S}c)P_{\hat{-}}]$\\
  \hline
  \rule{0pt}{18pt}$D_{\hat{-}}$ & \cellcolor{red!20} $-i\mathbb{C}[s\mathfrak{K}_{\hat{+}}-c\mathfrak{K}_{\hat{-}}]$& \cellcolor{red!20} $i\mathbb{C}[sP_{\hat{+}}-cP_{\hat{-}}]$& \cellcolor{red!20} $0$& \cellcolor{cyan!20} $i[(c-\mathbb{S}s)\mathfrak{K}_{\hat{+}}+(s+\mathbb{S}c)\mathfrak{K}_{\hat{-}}]$& \cellcolor{cyan!20} $-i[(c-\mathbb{S}s)P_{\hat{+}}+(s+\mathbb{S}c)P_{\hat{-}}]$& \cellcolor{cyan!20} $0$\\
  \hline  
@@ -796,7 +773,7 @@ The generator representation $(J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}$ can be 
     (J_{\hat{c}\hat{d}})^{\hat{a}}_{~\hat{b}}=(J_{\hat{c}\hat{d}})^{\hat{a}\hat{f}}g_{\hat{f}\hat{b}},
 \end{align}
 where $(J_{{\hat{c}}{\hat{d}}})^{{\hat{a}}{\hat{b}}}=i(g_{\hat{c}}^{\hat{a}} g_{\hat{d}}^{\hat{b}}-g_{\hat{c}}^{\hat{b}} g_{\hat{d}}^{\hat{a}})$. The representation matrices of conformal generators are defined by taking the first  index to be a superscript and the second subscript:
-%\begin{comment}
+
 \begin{eqnarray}
     &&(D_{\hat{+}})^{\hat{a}}_{~\hat{b}}\equiv -\cos{\delta}(J_{-2-1})^{\hat{a}}_{~\hat{b}}-\sin{\delta}(J_{\hat{+}\hat{-}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
     &&(D_{\hat{-}})^{\hat{a}}_{~\hat{b}}\equiv -\sin{\delta}(J_{-2-1})^{\hat{a}}_{~\hat{b}}+\cos{\delta}(J_{\hat{+}\hat{-}})^{\hat{a}}_{~\hat{b}}~;\nonumber\\
@@ -804,8 +781,7 @@ where $(J_{{\hat{c}}{\hat{d}}})^{{\hat{a}}{\hat{b}}}=i(g_{\hat{c}}^{\hat{a}} g_{
     \frac{(P_{\hat{\mu}})^{\hat{a}}_{~\hat{b}}}{\sqrt{2}}\equiv (J_{-1\hat{\mu}})^{\hat{a}}_{~\hat{b}}~.
     \label{implicit6x6}
 \end{eqnarray}
-%\end{comment}
-%
+
 The explicit $4\times4$ matrix representations are then given by %in Appendix \ref{4x4}. The explicit $4\times4$ projective spacetime matrix representations in interpolation form, corresponding to Eq.\eqref{implicit6x6}, are given below
 \begin{align}
     D_{\hat{+}}&=\begin{pmatrix}
@@ -930,7 +906,7 @@ $b^{\hat{\pm}}=\omega^{\hat{\pm},-2},c^{\hat{+}}=\omega^{-1\hat{+}}$ and $\alpha
     \end{table}
     \end{center}
 
-%\begin{comment}
+
 \begin{center}
 \begin{table}[!htb]
         \begin{minipage}{.5\linewidth}
@@ -979,13 +955,12 @@ $b^{\hat{\pm}}=\omega^{\hat{\pm},-2},c^{\hat{+}}=\omega^{-1\hat{+}}$ and $\alpha
           \end{minipage} 
     \end{table}
     \end{center}
-%\end{comment}
-\begin{table*}[t]
-  \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
+
+
+
+\begin{table}[h!]
     \begin{ruledtabular}
        \begin{tabular}{lcc}
-	%\hline
-	 %\hline
 	Interpolation angle & Kinematic & Dynamic \\
 	\hline
 	\rule{0pt}{3ex} $\delta=0$ & $P_{3}$, $D$ & $ K_{3}$, $P_{0}$, $\mathfrak{K}_{{0}}$, $\mathfrak{K}_{{3}}$\\
@@ -995,7 +970,8 @@ $b^{\hat{\pm}}=\omega^{\hat{\pm},-2},c^{\hat{+}}=\omega^{-1\hat{+}}$ and $\alpha
 	 %\hline
       \end{tabular}
     \end{ruledtabular}
-\end{table*}
+    \caption{\label{tab:Kinematic_and_dynamic_generators_for_different_interoplation_angles_conformal1+1}Kinematic and dynamic conformal generators for different interpolation angles in $(1+1)$}
+\end{table}
 \end{widetext}
 %
 
@@ -1024,7 +1000,8 @@ as well as the boost generator $K_3$ beyond the typical common kinematic generat
 As discussed in this work, identifying four out of six generators in the conformal algebra as the kinematic generators in LFD appears useful in understanding the utility of LFD for hadron phenomenology, thereby saving considerable dynamic efforts in solving QCD. In this vein, our future work will explore the extension of these interpolation methods to the $(3+1)$  dimensional conformal group.
 
 \acknowledgments
-This work was supported by the US DOE Contract No. DE-FG02-03ER41260.
+This work was supported by the U.S. Department of Energy (Grant No. DE-FG02-03ER41260).
+The National Energy Research Scientific Computing Center (NERSC) supported by the Office of Science of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231 is also acknowledged. 
 
 \appendix
 
@@ -1036,11 +1013,11 @@ The new vacuum $\ket{\Omega_{D_{3}}}$ created by $a^{\dagger\prime}_{D^{(1+0)}_{
 \end{align}
 where, $a\ket{0}=0$. To simplify the exponent, we define $d_{+}=\frac12 a^{\dagger2}$, $d_{-}=\frac12 a^{2}$, and $d_{0}=\frac12\bigl(a^{\dagger}a+\tfrac12\bigr)$, which forms a closed group as $[d_{+},d_{-}]=-2d_{0}$ and $[d_{0},d_{\pm}]=\pm d_{\pm}$. Then
 \begin{align}
-    \ket{\Omega_{D_{3}}}=e^{\frac{\alpha}{2}}S(\alpha)\ket{0}
+    \ket{\Omega_{D_{3}}}=e^{\frac{\alpha}{2}}S(\alpha)\ket{0},
 \end{align}
 where, $S(\alpha)=e^{\alpha(d_{+}-d_{-})}$. The ansatz for $S(\alpha)$, reads
 \begin{align}
-S(\alpha)=e^{f(\alpha)d_{+}}\;e^{g(\alpha)d_{0}}\;e^{h(\alpha)d_{-}}
+S(\alpha)=e^{f(\alpha)d_{+}}\;e^{g(\alpha)d_{0}}\;e^{h(\alpha)d_{-}},
 \end{align}
 with initial conditions $f(0)=g(0)=h(0)=0$. On differentiating the ansatz, and matching the coefficients of $d_{+}$, $d_{-}$, and $d_{0}$, we get the following ordinary differential equation system
 \begin{align}
@@ -1048,6 +1025,7 @@ f'-g'f+h'e^{-g}f^{2}&=1,\\
 g'-2h'e^{-g}f&=0,\\
 h'e^{-g}&=-1.
 \end{align}
+
 We also used the Baker–Campbell–Hausdorff formula
 \begin{align}
     e^{f d_{+}}d_{0}e^{-f d_{+}}&=d_{0}-f d_{+},\\
@@ -1065,6 +1043,7 @@ Which simplifies the $S(\alpha)$ to
     S(\alpha)
    =e^{\tfrac12\tanh\alpha\,a^{\dagger2}} e^{-\ln(\cosh\alpha)\bigl(a^{\dagger}a+\tfrac12\bigr)} e^{-\tfrac12\tanh\alpha\,a^{2}}.
 \end{align}
+
 Acting it on vacuum and multiplying by the factor \(e^{\alpha/2}\) gives the final result
 \begin{align}
     \ket{\Omega_{D_{3}}}&=\frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\;
@@ -1079,7 +1058,6 @@ We find the normalization of this new vacuum by computing,
     &=\sum_{k=0}^{\infty}\frac{((\tanh^2{\alpha})/4)^k}{k!k!}(2k)!\nonumber\\
     &=\cosh{\alpha}
 \end{align}
-
 with normalization of vacuum $\braket{0|0}=1$, then
 \begin{align}
     \braket{\Omega_{D_{3}}|\Omega_{D_{3}}} =&  \frac{e^{\alpha}}{\cosh\alpha}  \bra{0}e^{\frac{\tanh\alpha}{2}\,a^{2}} e^{\frac{\tanh\alpha}{2}\,a^{\dagger2}}\ket{0}=e^{\alpha}.
@@ -1087,14 +1065,12 @@ with normalization of vacuum $\braket{0|0}=1$, then
 
 Similarly, we find the inner product of the dilated vacuum with
 the displaced vacuum by computing
-
 \begin{align}
     \bra{0}&e^{-\frac{c}{\sqrt{2}}a} e^{\frac{\tanh\alpha}{2}\,a^{\dagger2}}\ket{0}\nonumber\\
     &=\sum_{n=0}^{\infty}\sum_{k=0}^{\infty}\frac{(-c/\sqrt{2})^n}{n!}\frac{((\tanh\alpha)/2)^k}{k!}\bra{0}a^n (a^{\dagger2})^k\ket{0}\nonumber\\
     &=\sum_{k=0}^{\infty}\frac{(-c/\sqrt{2})^{(2k)}}{(2k)!}\frac{((\tanh\alpha)/2)^k}{k!}\sqrt{(2k)!}\bra{0}a^{(2k)} \ket{2k}\nonumber\\
     &=e^{\frac{c^2\tanh\alpha}{4}}
 \end{align}
-
 then
 \begin{align}
     \braket{\Omega_{P_{3}}|\Omega_{D_{3}}} =& \frac{e^{\alpha/2}}{\sqrt{\cosh\alpha}}\; e^{-\frac{c^2}{4}(1-\tanh\alpha)}~.
@@ -1104,3 +1080,4 @@ then
 \bibliography{BibTeXList}% Produces the bibliography via BibTeX.
 
 \end{document}
+
